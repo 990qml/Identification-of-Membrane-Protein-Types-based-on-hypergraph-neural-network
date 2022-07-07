@@ -1,0 +1,17 @@
+
+
+
+
+feature_PSSM_HOG=[];
+
+for i=1:size(feature_PSSM,1)
+    vv = feature_PSSM(i,:);
+	P=[];
+	P = reshape(vv,11,20);
+	FF1=HOG(P,8,1,1);
+	FF2=HOG(P,8,2,1);
+	FF3=HOG(P,8,3,1);
+	FF4=HOG(P,8,4,1);
+	FF = [FF1;FF2;FF3;FF4];
+    feature_PSSM_HOG(i,:)=FF;
+end

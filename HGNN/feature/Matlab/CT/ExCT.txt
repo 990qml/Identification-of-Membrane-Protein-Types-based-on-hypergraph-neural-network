@@ -1,0 +1,8 @@
+
+feature_CT = [];
+
+for i=1:size(Sequence)
+    SEQ=Sequence(i);
+	FF=CT(SEQ,abc);
+    feature_CT(i,:)=FF;
+end

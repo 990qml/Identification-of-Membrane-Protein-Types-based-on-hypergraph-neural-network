@@ -1,0 +1,8 @@
+1、环境配置需求：安装(Pytorch 0.4.0) (https://pytorch.org/)。还需要安装yaml
+
+2、数据集：处理过的数据集在data文件夹里，膜蛋白特征表示算法在feature文件夹里	
+   数据处理及配置具体见datasets文件夹
+
+3、运行
+配置文件config.yaml：D4为目标数据集，可更换
+train.py：选择需要训练的数据，后开始训练。具体流程看代码注释，将预测结果保存至data/protein里的对应数据集的A.csv

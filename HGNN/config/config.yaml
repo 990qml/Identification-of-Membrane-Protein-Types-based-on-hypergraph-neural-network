@@ -1,0 +1,61 @@
+#------------------------------------------------------------------#
+# must check the direction of data_root and result_root before run #
+#------------------------------------------------------------------#
+
+#configure feature path
+# **** please must modify the data_root before first running ****
+data_root: &d_r E:\USERPROG\HGNN\data
+D1_ft: !join [*d_r, D1.mat]
+D2_ft: !join [*d_r, D2.mat]
+D3_ft: !join [*d_r, D3.mat]
+D4_ft: !join [*d_r, D4.mat]
+#Hypergraph
+graph_type: &g_t hypergraph
+K_neigs: [4]
+#K_neigs: [10, 15 ]
+m_prob: 1.0
+is_probH: True
+#---------------------------------------
+# change me
+use_AvBlock_feature_for_structure: True
+use_DCT_feature_for_structure: True
+use_DWT_feature_for_structure: True
+use_HOG_feature_for_structure: True
+use_Pse_feature_for_structure: True
+#---------------------------------------
+#Model
+#--------------------------------------------------
+# select the dataset you use
+on_dataset: &o_d D4
+#--------------------------------------------------
+#---------------------------------------
+# change me  False
+use_AvBlock_feature: True
+use_DCT_feature: True
+use_DWT_feature: True
+use_HOG_feature: True
+use_Pse_feature: True
+#---------------------------------------
+
+
+#Result
+# configure result path
+# **** please must modify the result_root before first running ****
+result_root: &r_r E:\USERPROG\HGNN\result
+result_sub_folder: !join [*r_r, !concat [ *g_t, _, *o_d ]]
+ckpt_folder: !join [*r_r, ckpt]
+
+
+#Train
+
+max_epoch: 1500
+n_hid: 128
+lr: 0.001
+milestones: [100]
+gamma: 0.9
+
+drop_out: 0.5
+print_freq: 100
+weight_decay: 0.0005
+decay_step: 100
+decay_rate: 0.9

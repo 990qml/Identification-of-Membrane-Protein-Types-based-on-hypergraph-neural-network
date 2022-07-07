@@ -1,0 +1,82 @@
+load('phy_6.mat');
+
+A_feature_AC_f1=[];
+B_feature_AC_f1=[];
+
+
+%P_A
+
+for i=1:size(protein_A_sequence_f_1)
+    SEQ=protein_A_sequence_f_1(i);
+	SEQ=cell2mat(SEQ);
+    P=PYH_6(SEQ,phy_6);
+	FF=AutoCov(P,30);
+    A_feature_AC_f1(i,:)=FF;
+	kd = mod(i,100);
+	if kd==0
+		prin = i;
+		prin
+	end
+end
+
+
+%P_B
+for i=1:size(protein_B_sequence_f_1)
+    SEQ=protein_B_sequence_f_1(i);
+	SEQ=cell2mat(SEQ);
+    P=PYH_6(SEQ,phy_6);
+	FF=AutoCov(P,30);
+    B_feature_AC_f1(i,:)=FF;
+	kd = mod(i,100);
+	if kd==0
+		prin = i;
+		prin
+	end
+end
+
+Positive_AC_a=[A_feature_AC_f1];
+Positive_AC_b=[B_feature_AC_f1];
+
+Positive_AC = [Positive_AC_a,Positive_AC_b];
+
+A_feature_AC_f1=[];
+B_feature_AC_f1=[];
+
+%N_A
+for i=1:size(protein_A_sequence_f_1)
+    SEQ=protein_A_sequence_f_1(i);
+	SEQ=cell2mat(SEQ);
+    P=PYH_6(SEQ,phy_6);
+	FF=AutoCov(P,30);
+    A_feature_AC_f1(i,:)=FF;
+	kd = mod(i,100);
+	if kd==0
+		prin = i;
+		prin
+	end
+end
+
+
+%N_B
+for i=1:size(protein_B_sequence_f_1)
+    SEQ=protein_B_sequence_f_1(i);
+	SEQ=cell2mat(SEQ);
+    P=PYH_6(SEQ,phy_6);
+	FF=AutoCov(P,30);
+    B_feature_AC_f1(i,:)=FF;
+	kd = mod(i,100);
+	if kd==0
+		prin = i;
+		prin
+	end
+end
+
+Negative_AC_a=[A_feature_AC_f1];
+Negative_AC_b=[B_feature_AC_f1];
+
+Negative_AC = [Negative_AC_a,Negative_AC_b];
+
+
+
+
+

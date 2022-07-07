@@ -1,0 +1,2131 @@
+PSIBLAST 2.10.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot-all.fasta
+           550,116 sequences; 196,219,159 total letters
+
+Results from round 1
+
+
+Query= qyq
+
+Length=146
+                                                                      Score        E
+Sequences producing significant alignments:                          (Bits)     Value
+
+Q65169 Protein B602L OS=African swine fever virus (strain Badajoz...  46.2       2e-05
+P0CAI1 Protein B602L OS=African swine fever virus (isolate Tick/S...  37.0       0.041
+Q06806 Tyrosine-protein kinase receptor Tie-1 OS=Mus musculus GN=...  35.8       0.11 
+Q06805 Tyrosine-protein kinase receptor Tie-1 OS=Bos taurus GN=TI...  35.0       0.15 
+P0CAI0 Protein B602L OS=African swine fever virus (isolate Pig/Ke...  33.9       0.35 
+P35590 Tyrosine-protein kinase receptor Tie-1 OS=Homo sapiens GN=...  33.9       0.39 
+P41950 Dendrite extension defective protein 1 OS=Caenorhabditis e...  33.1       0.89 
+Q05980 Chaperone protein DnaJ OS=Brucella ovis (strain ATCC 25840...  31.6       2.3  
+Q57AD6 Chaperone protein DnaJ OS=Brucella abortus biovar 1 (strai...  31.2       2.8  
+Q2YQV1 Chaperone protein DnaJ OS=Brucella abortus (strain 2308) G...  31.2       2.8  
+B2S9C2 Chaperone protein DnaJ OS=Brucella abortus (strain S19) GN...  31.2       2.8  
+Q8FXX1 Chaperone protein DnaJ OS=Brucella suis biovar 1 (strain 1...  31.2       2.8  
+B0CJX5 Chaperone protein DnaJ OS=Brucella suis (strain ATCC 23445...  31.2       2.8  
+C0RG11 Chaperone protein DnaJ OS=Brucella melitensis biotype 2 (s...  31.2       2.8  
+Q8YE77 Chaperone protein DnaJ OS=Brucella melitensis biotype 1 (s...  31.2       2.8  
+A9M9V9 Chaperone protein DnaJ OS=Brucella canis (strain ATCC 2336...  31.2       2.8  
+A9HEA1 Chaperone protein DnaJ OS=Gluconacetobacter diazotrophicus...  31.2       3.1  
+Q9W7R4 Teneurin-3 OS=Danio rerio GN=tenm3 PE=2 SV=1                   30.4       7.1  
+Q9ZQ47 Glycine-rich domain-containing protein 1 OS=Arabidopsis th...  30.0       8.6  
+Q6A058 Armadillo repeat-containing X-linked protein 2 OS=Mus musc...  30.0       9.1  
+Q02858 Angiopoietin-1 receptor OS=Mus musculus GN=Tek PE=1 SV=2       30.0       9.3  
+
+
+>Q65169 Protein B602L OS=African swine fever virus (strain Badajoz 1971 
+Vero-adapted) GN=Ba71V-079 PE=3 SV=1
+Length=602
+
+ Score = 46.2 bits (108),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 37/119 (31%), Positives = 50/119 (42%), Gaps = 7/119 (6%)
+
+Query  2    TCAATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCA  61
+            TCA+T   CA       A+TC + CA+   +  A+T     A TG + CA        CA
+Sbjct  160  TCAST---CADTNVDTCASTCASTCASTCASTCASTCASTCASTGASTCADTNVDT--CA  214
+
+Query  62   TGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTT-CCAAATACACTTT  119
+            +          A+TCA      CA+ C  T    T  + CA T    CA+  A  C +T
+Sbjct  215  STCADTNVDTCASTCADTNVDTCASTCADTNVN-TCASMCADTNVDTCASTCANTCAST  272
+
+
+ Score = 43.1 bits (100),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 38/135 (28%), Positives = 50/135 (37%), Gaps = 16/135 (12%)
+
+Query  4    AATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATG  63
+            A +A  CA         TC + CA+   +  A+T          TC +TCA+        
+Sbjct  155  AQSAYTCASTCADTNVDTCASTCASTCASTCASTCAS-------TCASTCASTGASTCAD  207
+
+Query  64   TTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGT--TTC---CAAATACACTT  118
+            T    C   A+TCA      CA+ C  T    T  + CA T   TC   CA      C +
+Sbjct  208  TNVDTC---ASTCADTNVDTCASTCADTNVD-TCASTCADTNVNTCASMCADTNVDTCAS  263
+
+Query  119  TTGGTAGAATCTGCA  133
+            T   T  +   T  A
+Sbjct  264  TCANTCASTEYTDLA  278
+
+
+ Score = 36.6 bits (83),  Expect = 0.051, Method: Composition-based stats.
+ Identities = 31/105 (30%), Positives = 42/105 (40%), Gaps = 9/105 (9%)
+
+Query  43   ACTGCTCCATCAAAAGGCATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCA  102
+            A +  TC +TCA          TCA  +  A+TCA    + CA+  C +T  +TG + CA
+Sbjct  155  AQSAYTCASTCADT-----NVDTCA--STCASTCASTCASTCAS-TCASTCASTGASTCA  206
+
+Query  103  GTTT-CCAAATACACTTTTGGTAGAATCTGCAGGTGGATATTGAT  146
+             T    CA+  A     T   T        CA         T A+
+Sbjct  207  DTNVDTCASTCADTNVDTCASTCADTNVDTCASTCADTNVNTCAS  251
+
+
+>P0CAI1 Protein B602L OS=African swine fever virus (isolate Tick/South 
+Africa/Pretoriuskop Pr4/1996) GN=Pret-091 PE=3 SV=1
+Length=570
+
+ Score = 37.0 bits (84),  Expect = 0.041, Method: Composition-based stats.
+ Identities = 29/101 (29%), Positives = 35/101 (35%), Gaps = 15/101 (15%)
+
+Query  19   ATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATTCAG  78
+            A +   C    A T   T     A     TC +TCA          TCA     A+TCA 
+Sbjct  155  AQSAYTCADTNASTSADTNASTCADTNVDTCASTCAD-----TNVDTCADT--CASTCAS  207
+
+Query  79   CTGAACATGCCTTTTGATGGAGCAGTTTCCAAATACACTTT  119
+               + CA+ C  T         CA T   C +  A  C  T
+Sbjct  208  TCASTCASTCADTNVDT-----CADT---CVSTCASTCANT  240
+
+
+ Score = 35.8 bits (81),  Expect = 0.076, Method: Composition-based stats.
+ Identities = 26/92 (28%), Positives = 32/92 (35%), Gaps = 8/92 (9%)
+
+Query  54   AAAAGGCATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAATA  113
+            A +A  CA           A+TCA      CA+ C  T         CA T   CA+  A
+Sbjct  155  AQSAYTCADTNASTSADTNASTCADTNVDTCASTCADTNVDT-----CADT---CASTCA  206
+
+Query  114  CACTTTTGGTAGAATCTGCAGGTGGATATTGA  145
+              C +T   T        CA       A+T A
+Sbjct  207  STCASTCASTCADTNVDTCADTCVSTCASTCA  238
+
+
+ Score = 35.8 bits (81),  Expect = 0.099, Method: Composition-based stats.
+ Identities = 29/91 (32%), Positives = 36/91 (40%), Gaps = 8/91 (9%)
+
+Query  4    AATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAA-AGGCAT  62
+            A +A  CA       A T  + CA    T   T     A     TC  TCA+  A  CA+
+Sbjct  155  AQSAYTCADTNASTSADTNASTCA---DTNVDTCASTCADTNVDTCADTCASTCASTCAS  211
+
+Query  63   --GTTCAGCTGAATTCAGCTGAACATGCCTT  91
+               +TCA       TCA    + CA+ C  T
+Sbjct  212  TCASTCADTN--VDTCADTCVSTCASTCANT  240
+
+
+ Score = 32.7 bits (73),  Expect = 0.98, Method: Composition-based stats.
+ Identities = 24/70 (34%), Positives = 31/70 (44%), Gaps = 9/70 (13%)
+
+Query  1    ATCAATA--TCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGC-TCCATCAAAA  57
+            +TCA T   TC + C       TC   CA+   +  A+T     A T   TC  TC +  
+Sbjct  175  STCADTNVDTCASTCAD-TNVDTCADTCASTCASTCASTCASTCADTNVDTCADTCVST-  232
+
+Query  58   GGCATGTTCA  67
+              CA  +TCA
+Sbjct  233  --CA--STCA  238
+
+
+>Q06806 Tyrosine-protein kinase receptor Tie-1 OS=Mus musculus GN=Tie1 
+PE=1 SV=3
+Length=1134
+
+ Score = 35.8 bits (81),  Expect = 0.11, Method: Composition-based stats.
+ Identities = 28/93 (30%), Positives = 32/93 (34%), Gaps = 9/93 (10%)
+
+Query  53   CAAAAGGCATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGAT------GGAGCAGTTT  106
+            C     GC  G  C    G      G TG  C   C     G +      G AGC G T 
+Sbjct  222  CVKDCPGCLHGGVCHDHDGECVCPPGFTGTRCEQACREGRFGQSCQEQCPGTAGCRGLTF  281
+
+Query  107  CCAAATACACTTTTGGTAGAATCTGCAGGTGGA  139
+            C      C+C +   G  G+     CA G  GA
+Sbjct  282  CLPDPYGCSCGS---GWRGSQCQEACAPGHFGA  311
+
+
+>Q06805 Tyrosine-protein kinase receptor Tie-1 OS=Bos taurus GN=TIE1 
+PE=2 SV=1
+Length=1136
+
+ Score = 35.0 bits (79),  Expect = 0.15, Method: Composition-based stats.
+ Identities = 27/93 (29%), Positives = 32/93 (34%), Gaps = 9/93 (10%)
+
+Query  53   CAAAAGGCATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGAT------GGAGCAGTTT  106
+            C     GC  G  C    G      G TG  C   C     G +      G +GC G T 
+Sbjct  222  CTKECPGCLHGGVCHDQDGECVCPPGFTGTRCEQACREGRFGQSCQEQCPGTSGCRGLTF  281
+
+Query  107  CCAAATACACTTTTGGTAGAATCTGCAGGTGGA  139
+            C      C+C +   G  G+     CA G  GA
+Sbjct  282  CLPDPYGCSCGS---GWRGSQCQEACAPGRFGA  311
+
+
+>P0CAI0 Protein B602L OS=African swine fever virus (isolate Pig/Kenya/KEN-50/1950) 
+GN=Ken-091 PE=3 SV=1
+Length=543
+
+ Score = 33.9 bits (76),  Expect = 0.35, Method: Composition-based stats.
+ Identities = 17/52 (33%), Positives = 22/52 (42%), Gaps = 1/52 (2%)
+
+Query  41   AAACTGCTCCATCAAAAGGCATGTTCAGCTGA-ATTCAGCTGAACATGCCTT  91
+            +A     TC +TCA+        T    CT   A+TCA      CA+ C  T
+Sbjct  157  SAYTCASTCASTCASTCASTCADTNVDTCTDTCASTCADTNVDTCASTCADT  208
+
+
+ Score = 32.7 bits (73),  Expect = 0.91, Method: Composition-based stats.
+ Identities = 25/78 (32%), Positives = 33/78 (42%), Gaps = 21/78 (27%)
+
+Query  43   ACTGCTCCATCAAAAGGCATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCA  102
+            A +  TC +TCA+    CA+  TCA      +TCA      C   C +T         CA
+Sbjct  155  AQSAYTCASTCAST---CAS--TCA------STCADTNVDTCTDTCAST---------CA  194
+
+Query  103  GTTT-CCAAATACACTTT  119
+             T    CA+  A  C +T
+Sbjct  195  DTNVDTCASTCADTCAST  212
+
+
+ Score = 32.0 bits (71),  Expect = 2.0, Method: Composition-based stats.
+ Identities = 21/59 (36%), Positives = 26/59 (44%), Gaps = 12/59 (20%)
+
+Query  2    TCAAT-ATCCA--CCTGCAGAT--TCTACCAAAAGTGTATTTGGAAACTGCTCCATCAA  55
+            TCA+T A+ CA  C + CA     TCT  CA+        T          TC  TCA+
+Sbjct  160  TCASTCASTCASTCASTCADTNVDTCTDTCASTCADTNVDTCAS-------TCADTCAS  211
+
+
+>P35590 Tyrosine-protein kinase receptor Tie-1 OS=Homo sapiens GN=TIE1 
+PE=1 SV=1
+Length=1138
+
+ Score = 33.9 bits (76),  Expect = 0.39, Method: Composition-based stats.
+ Identities = 27/93 (29%), Positives = 32/93 (34%), Gaps = 9/93 (10%)
+
+Query  53   CAAAAGGCATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGAT------GGAGCAGTTT  106
+            C     GC  G  C    G      G TG  C   C     G +      G +GC G T 
+Sbjct  224  CTKECPGCLHGGVCHDHDGECVCPPGFTGTRCEQACREGRFGQSCQEQCPGISGCRGLTF  283
+
+Query  107  CCAAATACACTTTTGGTAGAATCTGCAGGTGGA  139
+            C      C+C +   G  G+     CA G  GA
+Sbjct  284  CLPDPYGCSCGS---GWRGSQCQEACAPGHFGA  313
+
+
+>P41950 Dendrite extension defective protein 1 OS=Caenorhabditis elegans 
+GN=dex-1 PE=2 SV=2
+Length=1090
+
+ Score = 33.1 bits (74),  Expect = 0.89, Method: Composition-based stats.
+ Identities = 30/130 (23%), Positives = 36/130 (28%), Gaps = 1/130 (1%)
+
+Query  8    TCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCA  67
+            TC   C+       C  CC  + GT    +      C  C     C      CAT T CA
+Sbjct  315  TCDQECSNGEWGPDCAYCCHCSEGTCHPISGDCQRGCATCWDGVACQTRQEKCATKTQCA  374
+
+Query  68   GCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAATACACTTTTGGTAGAA  127
+                +      C G       C       G   C     C   +T C        T G  
+Sbjct  375  SNALSFNDYDRC-GEPIQRCQCLNGYKGDGYNNCEDVDECKTNSTICHKNAICTNTPGRY  433
+
+Query  128  TCTGCAGGTG  137
+             C    G +G
+Sbjct  434  FCMCKEGFSG  443
+
+
+>Q05980 Chaperone protein DnaJ OS=Brucella ovis (strain ATCC 25840 / 
+63/290 / NCTC 10512) GN=dnaJ PE=2 SV=2
+Length=377
+
+ Score = 31.6 bits (70),  Expect = 2.3, Method: Composition-based stats.
+ Identities = 22/72 (31%), Positives = 27/72 (38%), Gaps = 9/72 (13%)
+
+Query  19   ATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATT---  75
+            + TC  C  + A  G+  TT     CT C+      AA G  +   TC GC G       
+Sbjct  145  SITCDECSGSGAKPGSQPTT-----CTMCSGSGRVRAAQGFFSVERTCPGCNGRGQIIKD  199
+
+Query  76   -CAGCTGAACAT  86
+             C  C G    T
+Sbjct  200  PCEKCHGQGRVT  211
+
+
+>Q57AD6 Chaperone protein DnaJ OS=Brucella abortus biovar 1 (strain 9-941) 
+GN=dnaJ PE=3 SV=1
+Length=377
+
+ Score = 31.2 bits (69),  Expect = 2.8, Method: Composition-based stats.
+ Identities = 22/72 (31%), Positives = 27/72 (38%), Gaps = 9/72 (13%)
+
+Query  19   ATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATT---  75
+            + TC  C  + A  G+  TT     CT C+      AA G  +   TC GC G       
+Sbjct  145  SITCDECSGSGAKPGSQPTT-----CTMCSGSGRVRAAQGFFSVERTCPGCNGRGQIIKD  199
+
+Query  76   -CAGCTGAACAT  86
+             C  C G    T
+Sbjct  200  PCEKCHGQGRVT  211
+
+
+>Q2YQV1 Chaperone protein DnaJ OS=Brucella abortus (strain 2308) GN=dnaJ 
+PE=3 SV=1
+Length=377
+
+ Score = 31.2 bits (69),  Expect = 2.8, Method: Composition-based stats.
+ Identities = 22/72 (31%), Positives = 27/72 (38%), Gaps = 9/72 (13%)
+
+Query  19   ATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATT---  75
+            + TC  C  + A  G+  TT     CT C+      AA G  +   TC GC G       
+Sbjct  145  SITCDECSGSGAKPGSQPTT-----CTMCSGSGRVRAAQGFFSVERTCPGCNGRGQIIKD  199
+
+Query  76   -CAGCTGAACAT  86
+             C  C G    T
+Sbjct  200  PCEKCHGQGRVT  211
+
+
+>B2S9C2 Chaperone protein DnaJ OS=Brucella abortus (strain S19) GN=dnaJ 
+PE=3 SV=1
+Length=377
+
+ Score = 31.2 bits (69),  Expect = 2.8, Method: Composition-based stats.
+ Identities = 22/72 (31%), Positives = 27/72 (38%), Gaps = 9/72 (13%)
+
+Query  19   ATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATT---  75
+            + TC  C  + A  G+  TT     CT C+      AA G  +   TC GC G       
+Sbjct  145  SITCDECSGSGAKPGSQPTT-----CTMCSGSGRVRAAQGFFSVERTCPGCNGRGQIIKD  199
+
+Query  76   -CAGCTGAACAT  86
+             C  C G    T
+Sbjct  200  PCEKCHGQGRVT  211
+
+
+>Q8FXX1 Chaperone protein DnaJ OS=Brucella suis biovar 1 (strain 1330) 
+GN=dnaJ PE=3 SV=1
+Length=377
+
+ Score = 31.2 bits (69),  Expect = 2.8, Method: Composition-based stats.
+ Identities = 22/72 (31%), Positives = 27/72 (38%), Gaps = 9/72 (13%)
+
+Query  19   ATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATT---  75
+            + TC  C  + A  G+  TT     CT C+      AA G  +   TC GC G       
+Sbjct  145  SITCDECSGSGAKPGSQPTT-----CTMCSGSGRVRAAQGFFSVERTCPGCNGRGQIIKD  199
+
+Query  76   -CAGCTGAACAT  86
+             C  C G    T
+Sbjct  200  PCEKCHGQGRVT  211
+
+
+>B0CJX5 Chaperone protein DnaJ OS=Brucella suis (strain ATCC 23445 / 
+NCTC 10510) GN=dnaJ PE=3 SV=1
+Length=377
+
+ Score = 31.2 bits (69),  Expect = 2.8, Method: Composition-based stats.
+ Identities = 22/72 (31%), Positives = 27/72 (38%), Gaps = 9/72 (13%)
+
+Query  19   ATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATT---  75
+            + TC  C  + A  G+  TT     CT C+      AA G  +   TC GC G       
+Sbjct  145  SITCDECSGSGAKPGSQPTT-----CTMCSGSGRVRAAQGFFSVERTCPGCNGRGQIIKD  199
+
+Query  76   -CAGCTGAACAT  86
+             C  C G    T
+Sbjct  200  PCEKCHGQGRVT  211
+
+
+>C0RG11 Chaperone protein DnaJ OS=Brucella melitensis biotype 2 (strain 
+ATCC 23457) GN=dnaJ PE=3 SV=1
+Length=377
+
+ Score = 31.2 bits (69),  Expect = 2.8, Method: Composition-based stats.
+ Identities = 22/72 (31%), Positives = 27/72 (38%), Gaps = 9/72 (13%)
+
+Query  19   ATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATT---  75
+            + TC  C  + A  G+  TT     CT C+      AA G  +   TC GC G       
+Sbjct  145  SITCDECSGSGAKPGSQPTT-----CTMCSGSGRVRAAQGFFSVERTCPGCNGRGQIIKD  199
+
+Query  76   -CAGCTGAACAT  86
+             C  C G    T
+Sbjct  200  PCEKCHGQGRVT  211
+
+
+>Q8YE77 Chaperone protein DnaJ OS=Brucella melitensis biotype 1 (strain 
+16M / ATCC 23456 / NCTC 10094) GN=dnaJ PE=3 SV=1
+Length=377
+
+ Score = 31.2 bits (69),  Expect = 2.8, Method: Composition-based stats.
+ Identities = 22/72 (31%), Positives = 27/72 (38%), Gaps = 9/72 (13%)
+
+Query  19   ATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATT---  75
+            + TC  C  + A  G+  TT     CT C+      AA G  +   TC GC G       
+Sbjct  145  SITCDECSGSGAKPGSQPTT-----CTMCSGSGRVRAAQGFFSVERTCPGCNGRGQIIKD  199
+
+Query  76   -CAGCTGAACAT  86
+             C  C G    T
+Sbjct  200  PCEKCHGQGRVT  211
+
+
+>A9M9V9 Chaperone protein DnaJ OS=Brucella canis (strain ATCC 23365 / 
+NCTC 10854) GN=dnaJ PE=3 SV=1
+Length=377
+
+ Score = 31.2 bits (69),  Expect = 2.8, Method: Composition-based stats.
+ Identities = 22/72 (31%), Positives = 27/72 (38%), Gaps = 9/72 (13%)
+
+Query  19   ATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATT---  75
+            + TC  C  + A  G+  TT     CT C+      AA G  +   TC GC G       
+Sbjct  145  SITCDECSGSGAKPGSQPTT-----CTMCSGSGRVRAAQGFFSVERTCPGCNGRGQIIKD  199
+
+Query  76   -CAGCTGAACAT  86
+             C  C G    T
+Sbjct  200  PCEKCHGQGRVT  211
+
+
+>A9HEA1 Chaperone protein DnaJ OS=Gluconacetobacter diazotrophicus (strain 
+ATCC 49037 / DSM 5601 / PAl5) GN=dnaJ PE=3 SV=1
+Length=374
+
+ Score = 31.2 bits (69),  Expect = 3.1, Method: Composition-based stats.
+ Identities = 20/62 (32%), Positives = 22/62 (35%), Gaps = 4/62 (6%)
+
+Query  26   CAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATT----CAGCTG  81
+            C +  GTG+A    GA  C  C       A  G       C  C GA       CA C G
+Sbjct  143  CESCEGTGSADRDQGAETCPTCHGAGKVRAQQGFFLVERACPTCHGAGKVVRNPCAACHG  202
+
+Query  82   AA  83
+            A 
+Sbjct  203  AG  204
+
+
+>Q9W7R4 Teneurin-3 OS=Danio rerio GN=tenm3 PE=2 SV=1
+Length=2590
+
+ Score = 30.4 bits (67),  Expect = 7.1, Method: Composition-based stats.
+ Identities = 28/91 (31%), Positives = 31/91 (34%), Gaps = 11/91 (12%)
+
+Query  10   CACCTGCAGATTCTACCAAAAGTGTATTTGGAAAC----TGCTC----CATCAAAAGGCA  61
+            C C T   G       CA   G+      GG+  C    TG  C    C       G C 
+Sbjct  555  CTCDTNWTGPDCSIEVCAVDCGS-HGVCIGGSCRCEEGWTGSVCDLKACHPRCTEHGTCK  613
+
+Query  62   TGTT-C-AGCTGAATTCAGCTGAACATGCCT  90
+             G   C  G TG   T  GC G   + G CT
+Sbjct  614  DGKCECHQGWTGEHCTVEGCPGLCNSNGRCT  644
+
+
+>Q9ZQ47 Glycine-rich domain-containing protein 1 OS=Arabidopsis thaliana 
+GN=GRDP1 PE=2 SV=1
+Length=819
+
+ Score = 30.0 bits (66),  Expect = 8.6, Method: Composition-based stats.
+ Identities = 20/55 (36%), Positives = 26/55 (47%), Gaps = 7/55 (13%)
+
+Query  35   ATTTGGAAACTG-CTCCATCAAAAGGCATGTTCAGCTG----AATTCAGCTGAAC  84
+            A  +G  ++C+G C      AA A GC +G  C+G  G    AA    G  GA C
+Sbjct  720  ANASGCGSSCSGECGDMVKSAANASGCGSG--CSGECGNMVKAANASGGGYGARC  772
+
+
+>Q6A058 Armadillo repeat-containing X-linked protein 2 OS=Mus musculus 
+GN=Armcx2 PE=2 SV=2
+Length=784
+
+ Score = 30.0 bits (66),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 33/107 (31%), Positives = 42/107 (39%), Gaps = 9/107 (8%)
+
+Query  32   TGTATTTGGAAACTGCTCCATCAAAAGGCATGTT-------CAGCTGAATTCAGCTGAAC  84
+            +G A T+GGAA  +G    AT  AAA    T +T        A  T A  T    T A  
+Sbjct  323  SGAAVTSGGAAVPSGGA--ATPRAAASTQRTASTEVMQVPRVAAATEATETPRIGTPAMV  380
+
+Query  85   ATGCCTTTTGATGGAGCAGTTTCCAAATACACTTTTGGTAGAATCTG  131
+            A       +GA    G +G++   A     A    TG    A + TG
+Sbjct  381  AEASLPVHSGAAENPGTSGSSKTAATGKKAAPGAHTGAIPKAGSATG  427
+
+
+>Q02858 Angiopoietin-1 receptor OS=Mus musculus GN=Tek PE=1 SV=2
+Length=1122
+
+ Score = 30.0 bits (66),  Expect = 9.3, Method: Composition-based stats.
+ Identities = 24/92 (26%), Positives = 26/92 (28%), Gaps = 9/92 (10%)
+
+Query  53   CAAAAGGCATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGAT------GGAGCAGTTT  106
+            C+     C     C   TG      G  G  C   C   T G T      G  GC     
+Sbjct  220  CSRPCTTCKNNGVCHEDTGECICPPGFMGRTCEKACEPHTFGRTCKERCSGPEGCKSYVF  279
+
+Query  107  CCAAATACACTTTTGGTAGAATCTGCAGGTGG  138
+            C      C+C T   G  G      C  G  G
+Sbjct  280  CLPDPYGCSCAT---GWRGLQCNEACPSGYYG  308
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.123    0.444    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5516274520
+Results from round 2
+
+
+Query= qyq
+
+Length=146
+                                                                      Score        E
+Sequences producing significant alignments:                          (Bits)     Value
+Sequences used in model and found again:
+
+Q65169 Protein B602L OS=African swine fever virus (strain Badajoz...  131        3e-35
+
+Sequences not found previously or not previously below threshold:
+
+P0CAI1 Protein B602L OS=African swine fever virus (isolate Tick/S...  85.6       5e-19
+Q8V9S9 Protein B602L OS=African swine fever virus (isolate Tick/M...  79.1       1e-16
+P0CAI2 Protein B602L OS=African swine fever virus (isolate Wartho...  76.0       1e-15
+P0CAI0 Protein B602L OS=African swine fever virus (isolate Pig/Ke...  70.6       8e-14
+O65312 Histone-lysine N-methyltransferase MEDEA OS=Arabidopsis th...  32.9       0.91 
+Q06806 Tyrosine-protein kinase receptor Tie-1 OS=Mus musculus GN=...  32.1       1.9  
+A8MXZ3 Keratin-associated protein 9-1 OS=Homo sapiens GN=KRTAP9-1...  31.3       2.2  
+Q06805 Tyrosine-protein kinase receptor Tie-1 OS=Bos taurus GN=TI...  31.7       2.3  
+Q9W7R4 Teneurin-3 OS=Danio rerio GN=tenm3 PE=2 SV=1                   30.6       5.9  
+P35590 Tyrosine-protein kinase receptor Tie-1 OS=Homo sapiens GN=...  30.2       8.5  
+
+
+>Q65169 Protein B602L OS=African swine fever virus (strain Badajoz 1971 
+Vero-adapted) GN=Ba71V-079 PE=3 SV=1
+Length=602
+
+ Score = 131 bits (329),  Expect = 3e-35, Method: Composition-based stats.
+ Identities = 37/132 (28%), Positives = 50/132 (38%), Gaps = 13/132 (10%)
+
+Query  2    TCAATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCA  61
+            TCA+T   CA       A+TC + CA+   +  A+T     A TG + CA        CA
+Sbjct  160  TCAST---CADTNVDTCASTCASTCASTCASTCASTCASTCASTGASTCADTNVDT--CA  214
+
+Query  62   TGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAATACACTTTTG  121
+            +          A+TCA      CA+ C  T    T  + CA T           C +T  
+Sbjct  215  STCADTNVDTCASTCADTNVDTCASTCADTNVN-TCASMCADTNV-------DTCASTCA  266
+
+Query  122  GTAGAATCTGCA  133
+             T  +   T  A
+Sbjct  267  NTCASTEYTDLA  278
+
+
+ Score = 64.8 bits (156),  Expect = 7e-12, Method: Composition-based stats.
+ Identities = 27/97 (28%), Positives = 37/97 (38%), Gaps = 4/97 (4%)
+
+Query  54   AAAAGGCATGTTCAGCTGAATTCAGCTGAACATGCCTT---TTGATGGAGCAGTTT-CCA  109
+            A +A  CA+          A+TCA    + CA+ C +T   T  +TG + CA T    CA
+Sbjct  155  AQSAYTCASTCADTNVDTCASTCASTCASTCASTCASTCASTCASTGASTCADTNVDTCA  214
+
+Query  110  AATACACTTTTGGTAGAATCTGCAGGTGGATATTGAT  146
+            +  A     T   T        CA         T A+
+Sbjct  215  STCADTNVDTCASTCADTNVDTCASTCADTNVNTCAS  251
+
+
+ Score = 38.6 bits (88),  Expect = 0.010, Method: Composition-based stats.
+ Identities = 15/59 (25%), Positives = 19/59 (32%), Gaps = 11/59 (19%)
+
+Query  2    TCAATATCCACCTGCAGATTCTACCAAAAGT--------GTATTTGGAAACTGCTCCAT  52
+            TCA+T   CA       A+TC         +          A+T     A T  T  A 
+Sbjct  224  TCAST---CADTNVDTCASTCADTNVNTCASMCADTNVDTCASTCANTCASTEYTDLAD  279
+
+
+ Score = 33.6 bits (75),  Expect = 0.55, Method: Composition-based stats.
+ Identities = 14/59 (24%), Positives = 18/59 (31%), Gaps = 5/59 (8%)
+
+Query  90   TTTTGATGGAGCAGTTT-----CCAAATACACTTTTGGTAGAATCTGCAGGTGGATATT  143
+                 A     CA T        CA+  A  C +T   T  +   + CA       A T
+Sbjct  150  DPNLHAQSAYTCASTCADTNVDTCASTCASTCASTCASTCASTCASTCASTGASTCADT  208
+
+
+>P0CAI1 Protein B602L OS=African swine fever virus (isolate Tick/South 
+Africa/Pretoriuskop Pr4/1996) GN=Pret-091 PE=3 SV=1
+Length=570
+
+ Score = 85.6 bits (210),  Expect = 5e-19, Method: Composition-based stats.
+ Identities = 22/99 (22%), Positives = 30/99 (30%), Gaps = 12/99 (12%)
+
+Query  38   TGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATTCAGCTGAACATGCCTT---TTG  94
+            +    A T  +  A         A+          A+TCA      CA  C +T   T  
+Sbjct  157  SAYTCADTNASTSADTN------ASTCADTNVDTCASTCADTNVDTCADTCASTCASTCA  210
+
+Query  95   ATGGAGCAGTTTCCAAATACACTTTTGGTAGAATCTGCA  133
+            +T  + CA T        A  C +T   T         A
+Sbjct  211  STCASTCADTNV---DTCADTCVSTCASTCANTEYADLA  246
+
+
+ Score = 75.6 bits (184),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 18/81 (22%), Positives = 24/81 (30%), Gaps = 6/81 (7%)
+
+Query  5    ATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGT  64
+              A+ CA       A+TC            A+T     A T  + CA             
+Sbjct  172  TNASTCADTNVDTCASTCADTNVDTCADTCASTCASTCASTCASTCADTNVDT------C  225
+
+Query  65   TCAGCTGAATTCAGCTGAACA  85
+                 +  A+TCA    A  A
+Sbjct  226  ADTCVSTCASTCANTEYADLA  246
+
+
+ Score = 74.9 bits (182),  Expect = 3e-15, Method: Composition-based stats.
+ Identities = 25/101 (25%), Positives = 33/101 (33%), Gaps = 15/101 (15%)
+
+Query  4    AATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATG  63
+            A +A  CA       A+T     A+        T     A T    CA        CA+ 
+Sbjct  155  AQSAYTCADTN----ASTSADTNASTCADTNVDTCASTCADTNVDTCADT------CAST  204
+
+Query  64   TTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGT  104
+                  +  A+TCA      CA  C      +T  + CA T
+Sbjct  205  CASTCASTCASTCADTNVDTCADTCV-----STCASTCANT  240
+
+
+ Score = 70.6 bits (171),  Expect = 9e-14, Method: Composition-based stats.
+ Identities = 26/92 (28%), Positives = 32/92 (35%), Gaps = 8/92 (9%)
+
+Query  54   AAAAGGCATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAATA  113
+            A +A  CA           A+TCA      CA+ C  T         CA T   CA+  A
+Sbjct  155  AQSAYTCADTNASTSADTNASTCADTNVDTCASTCADTNVDT-----CADT---CASTCA  206
+
+Query  114  CACTTTTGGTAGAATCTGCAGGTGGATATTGA  145
+              C +T   T        CA       A+T A
+Sbjct  207  STCASTCASTCADTNVDTCADTCVSTCASTCA  238
+
+
+ Score = 48.3 bits (113),  Expect = 4e-06, Method: Composition-based stats.
+ Identities = 16/67 (24%), Positives = 21/67 (31%), Gaps = 19/67 (28%)
+
+Query  2    TCAATATCCACCTGCAGATTCTACCAAAAGTGTATTT----------------GGAAACT  45
+            TCA+T   CA       A TC + CA+   +  A+T                     A T
+Sbjct  184  TCAST---CADTNVDTCADTCASTCASTCASTCASTCADTNVDTCADTCVSTCASTCANT  240
+
+Query  46   GCTCCAT  52
+                 A 
+Sbjct  241  EYADLAD  247
+
+
+ Score = 32.5 bits (72),  Expect = 1.1, Method: Composition-based stats.
+ Identities = 13/62 (21%), Positives = 16/62 (26%), Gaps = 5/62 (8%)
+
+Query  90   TTTTGATGGAGCAGTTT-----CCAAATACACTTTTGGTAGAATCTGCAGGTGGATATTG  144
+                 A     CA T         A+  A     T   T        CA       A+T 
+Sbjct  150  DPNLHAQSAYTCADTNASTSADTNASTCADTNVDTCASTCADTNVDTCADTCASTCASTC  209
+
+Query  145  AT  146
+            A+
+Sbjct  210  AS  211
+
+
+>Q8V9S9 Protein B602L OS=African swine fever virus (isolate Tick/Malawi/Lil 
+20-1/1983) GN=Mal-087 PE=3 SV=1
+Length=614
+
+ Score = 79.1 bits (193),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 24/135 (18%), Positives = 36/135 (27%), Gaps = 6/135 (4%)
+
+Query  4    AATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAA--AGGCA  61
+            A +A  CA       A+T     A+   +  A T     A T  +      A+  A   A
+Sbjct  155  AQSAYTCASTNADTSASTNADTSASTNASINADTNVDTCASTNASTNVDTNASINASTNA  214
+
+Query  62   TGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATG---GAGCAGTTT-CCAAATACACT  117
+            +       +  A+  A      CA+   +T          +  A T     A   A    
+Sbjct  215  STNVDTNASTNASINADTNVDTCASTNASTNVDTNASINASTNASTNVDTNADINANTNA  274
+
+Query  118  TTTGGTAGAATCTGC  132
+                        T  
+Sbjct  275  DINANINANTEYTDL  289
+
+
+ Score = 60.6 bits (145),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 22/126 (17%), Positives = 35/126 (28%), Gaps = 14/126 (11%)
+
+Query  28   AAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATTCAGCTGAACATG  87
+            A +    A+T    +A T     A+        A+          A+T A       A+ 
+Sbjct  155  AQSAYTCASTNADTSASTNADTSASTN------ASINADTNVDTCASTNASTNVDTNASI  208
+
+Query  88   CCTTTTG-------ATGGAGCAGTTT-CCAAATACACTTTTGGTAGAATCTGCAGGTGGA  139
+              +T          +T  +  A T    CA+  A     T      +   +         
+Sbjct  209  NASTNASTNVDTNASTNASINADTNVDTCASTNASTNVDTNASINASTNASTNVDTNADI  268
+
+Query  140  TATTGA  145
+             A T A
+Sbjct  269  NANTNA  274
+
+
+ Score = 45.6 bits (106),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 17/87 (20%), Positives = 29/87 (33%), Gaps = 2/87 (2%)
+
+Query  61   ATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTT-CCAAATACACTTT  119
+            A          +A+T A  + +  A+    T    T  +  A T     A+  A    +T
+Sbjct  158  AYTCASTNADTSASTNADTSASTNASINADTNVD-TCASTNASTNVDTNASINASTNAST  216
+
+Query  120  TGGTAGAATCTGCAGGTGGATATTGAT  146
+               T  +   +  A       A+T A+
+Sbjct  217  NVDTNASTNASINADTNVDTCASTNAS  243
+
+
+ Score = 45.2 bits (105),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 14/100 (14%), Positives = 24/100 (24%), Gaps = 6/100 (6%)
+
+Query  47   CTCCATCAAAAGGCATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTT  106
+               CA+  A        +       +A+T A          C +T          +   +
+Sbjct  158  AYTCASTNADT------SASTNADTSASTNASINADTNVDTCASTNASTNVDTNASINAS  211
+
+Query  107  CCAAATACACTTTTGGTAGAATCTGCAGGTGGATATTGAT  146
+              A+       +T            CA         T A+
+Sbjct  212  TNASTNVDTNASTNASINADTNVDTCASTNASTNVDTNAS  251
+
+
+>P0CAI2 Protein B602L OS=African swine fever virus (isolate Warthog/Namibia/Wart80/1980) 
+GN=War-089 PE=3 SV=1
+Length=550
+
+ Score = 76.0 bits (185),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 17/74 (23%), Positives = 22/74 (30%), Gaps = 6/74 (8%)
+
+Query  61   ATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTT-CCAAATACACTTT  119
+            A           A+TCA     +C     T T   T  + CA T    C       C +T
+Sbjct  158  AYTCADTNVDTCASTCADTNIDSC-----TDTNEDTCASTCADTNIDSCTDTNEDTCAST  212
+
+Query  120  TGGTAGAATCTGCA  133
+               T  +      A
+Sbjct  213  CASTCTSTEYADLA  226
+
+
+ Score = 63.7 bits (153),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 13/68 (19%), Positives = 17/68 (25%), Gaps = 2/68 (3%)
+
+Query  24   ACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATTCAGCTGAA  83
+            A  A         T     A T    C         CA+            T      + 
+Sbjct  155  AQSAYTCADTNVDTCASTCADTNIDSCTDTNEDT--CASTCADTNIDSCTDTNEDTCAST  212
+
+Query  84   CATGCCTT  91
+            CA+ C +T
+Sbjct  213  CASTCTST  220
+
+
+ Score = 62.9 bits (151),  Expect = 4e-11, Method: Composition-based stats.
+ Identities = 14/75 (19%), Positives = 19/75 (25%), Gaps = 2/75 (3%)
+
+Query  4    AATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATG  63
+            A +A  CA       A+TC      +       T     A T    C         CA+ 
+Sbjct  155  AQSAYTCADTNVDTCASTCADTNIDSCTDTNEDTCASTCADTNIDSCTDTNEDT--CAST  212
+
+Query  64   TTCAGCTGAATTCAG  78
+                  +      A 
+Sbjct  213  CASTCTSTEYADLAD  227
+
+
+ Score = 35.9 bits (81),  Expect = 0.069, Method: Composition-based stats.
+ Identities = 16/69 (23%), Positives = 21/69 (30%), Gaps = 12/69 (17%)
+
+Query  90   TTTTGATGGAGCAGTTT-CCAAATACA----CTTTTGGTAGAA-------TCTGCAGGTG  137
+                 A     CA T    CA+  A      CT T   T  +        +CT     T 
+Sbjct  150  DPNLHAQSAYTCADTNVDTCASTCADTNIDSCTDTNEDTCASTCADTNIDSCTDTNEDTC  209
+
+Query  138  GATATTGAT  146
+             +T  +  T
+Sbjct  210  ASTCASTCT  218
+
+
+>P0CAI0 Protein B602L OS=African swine fever virus (isolate Pig/Kenya/KEN-50/1950) 
+GN=Ken-091 PE=3 SV=1
+Length=543
+
+ Score = 70.6 bits (171),  Expect = 8e-14, Method: Composition-based stats.
+ Identities = 15/65 (23%), Positives = 21/65 (32%), Gaps = 10/65 (15%)
+
+Query  23   TACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATTCAGCTGA  82
+               CA+   +  A+T     A T    C         CA+          A+TCA     
+Sbjct  158  AYTCASTCASTCASTCASTCADTNVDTCTDT------CASTCADTNVDTCASTCAD----  207
+
+Query  83   ACATG  87
+             CA+ 
+Sbjct  208  TCAST  212
+
+
+ Score = 69.5 bits (168),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 18/79 (23%), Positives = 25/79 (32%), Gaps = 16/79 (20%)
+
+Query  54   AAAAGGCATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAATA  113
+            A +A  CA+       +  A+TCA      C   C +T         CA T         
+Sbjct  155  AQSAYTCASTCASTCASTCASTCADTNVDTCTDTCAST---------CADTNV-------  198
+
+Query  114  CACTTTTGGTAGAATCTGC  132
+              C +T   T  +   T  
+Sbjct  199  DTCASTCADTCASTEYTDL  217
+
+
+ Score = 69.1 bits (167),  Expect = 3e-13, Method: Composition-based stats.
+ Identities = 16/64 (25%), Positives = 21/64 (33%), Gaps = 10/64 (16%)
+
+Query  28   AAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATTCAGCTGAACATG  87
+            A +    A+T     A T  + CA             T       A+TCA      CA+ 
+Sbjct  155  AQSAYTCASTCASTCASTCASTCADTNVDT------CTDT----CASTCADTNVDTCAST  204
+
+Query  88   CCTT  91
+            C  T
+Sbjct  205  CADT  208
+
+
+ Score = 65.6 bits (158),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 14/59 (24%), Positives = 21/59 (36%), Gaps = 6/59 (10%)
+
+Query  17   AGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATT  75
+              A+TC + CA+   +  A T       T  + CA        CA+          A+T
+Sbjct  160  TCASTCASTCASTCASTCADTNVDTCTDTCASTCADTNVDT--CASTCADT----CAST  212
+
+
+ Score = 58.7 bits (140),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 17/60 (28%), Positives = 22/60 (37%), Gaps = 2/60 (3%)
+
+Query  4    AATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATG  63
+            A +A  CA       A+TC + CA         T     A T    CA+  A    CA+ 
+Sbjct  155  AQSAYTCASTCASTCASTCASTCADTNVDTCTDTCASTCADTNVDTCASTCADT--CAST  212
+
+
+ Score = 38.6 bits (88),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 12/42 (29%), Positives = 15/42 (36%), Gaps = 3/42 (7%)
+
+Query  102  AGTTTCCAAATACACTTTTGGTAGAA---TCTGCAGGTGGAT  140
+            A +   CA+  A  C +T   T       TCT     T   T
+Sbjct  155  AQSAYTCASTCASTCASTCASTCADTNVDTCTDTCASTCADT  196
+
+
+>O65312 Histone-lysine N-methyltransferase MEDEA OS=Arabidopsis thaliana 
+GN=MEA PE=1 SV=1
+Length=689
+
+ Score = 32.9 bits (73),  Expect = 0.91, Method: Composition-based stats.
+ Identities = 17/79 (22%), Positives = 19/79 (24%), Gaps = 9/79 (11%)
+
+Query  25   CCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATTCAGCTGA--  82
+             C +  G      T        C C   C    GGC        CT     C        
+Sbjct  451  TCKSKCGQQCPCLTHENCCEKYCGCSKDCNNRFGGC--NCAIGQCTNRQCPCFAANRECD  508
+
+Query  83   -----ACATGCCTTTTGAT  96
+                 +C   C   T G T
+Sbjct  509  PDLCRSCPLSCGDGTLGET  527
+
+
+>Q06806 Tyrosine-protein kinase receptor Tie-1 OS=Mus musculus GN=Tie1 
+PE=1 SV=3
+Length=1134
+
+ Score = 32.1 bits (71),  Expect = 1.9, Method: Composition-based stats.
+ Identities = 27/119 (23%), Positives = 32/119 (27%), Gaps = 17/119 (14%)
+
+Query  1    ATCAATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGC  60
+              C      C C  G  G     AC     G        G A C G T C        GC
+Sbjct  233  GVCHDHDGECVCPPGFTGTRCEQACREGRFGQSCQEQCPGTAGCRGLTFCLP---DPYGC  289
+
+Query  61   ATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTT-TCCAAATACACTT  118
+            + G             +G  G+ C   C     GA     C       C   + C C +
+Sbjct  290  SCG-------------SGWRGSQCQEACAPGHFGADCRLQCQCQNGGTCDRFSGCVCPS  335
+
+
+>A8MXZ3 Keratin-associated protein 9-1 OS=Homo sapiens GN=KRTAP9-1 PE=3 
+SV=1
+Length=250
+
+ Score = 31.3 bits (69),  Expect = 2.2, Method: Composition-based stats.
+ Identities = 28/131 (21%), Positives = 40/131 (31%), Gaps = 6/131 (5%)
+
+Query  2    TCAATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCA  61
+            TC++T  C   C   +    C  CC       T   T         +CC     +   C 
+Sbjct  31   TCSSTPCCQPSCCVPSC---CQPCCHPTCCQNTCCRTTCCQPTCVASCCQPSCCSTPCCQ  87
+
+Query  62   TGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAAT---ACACTT  118
+                 + C G  +  + C    C + CC      T        TTCC        C   T
+Sbjct  88   PTCCGSSCCGQTSCGSSCCQPICGSSCCQPCCHPTCYQTICFRTTCCQPTCCQPTCCRNT  147
+
+Query  119  TTGGTAGAATC  129
+            +   T   ++C
+Sbjct  148  SCQPTCCGSSC  158
+
+
+ Score = 29.8 bits (65),  Expect = 9.0, Method: Composition-based stats.
+ Identities = 24/117 (21%), Positives = 34/117 (29%), Gaps = 2/117 (2%)
+
+Query  2    TCAATATCCACCTGCAGATTCT--ACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGG  59
+            +C        CC      TTC    C A+       +T      C G +CC   +  +  
+Sbjct  46   SCCQPCCHPTCCQNTCCRTTCCQPTCVASCCQPSCCSTPCCQPTCCGSSCCGQTSCGSSC  105
+
+Query  60   CATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAATACAC  116
+            C      + C          T     T C  T    T     +   TCC ++    C
+Sbjct  106  CQPICGSSCCQPCCHPTCYQTICFRTTCCQPTCCQPTCCRNTSCQPTCCGSSCCQPC  162
+
+
+>Q06805 Tyrosine-protein kinase receptor Tie-1 OS=Bos taurus GN=TIE1 
+PE=2 SV=1
+Length=1136
+
+ Score = 31.7 bits (70),  Expect = 2.3, Method: Composition-based stats.
+ Identities = 26/119 (22%), Positives = 32/119 (27%), Gaps = 17/119 (14%)
+
+Query  1    ATCAATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGC  60
+              C      C C  G  G     AC     G        G + C G T C        GC
+Sbjct  233  GVCHDQDGECVCPPGFTGTRCEQACREGRFGQSCQEQCPGTSGCRGLTFCLP---DPYGC  289
+
+Query  61   ATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTT-TCCAAATACACTT  118
+            + G             +G  G+ C   C     GA     C       C   + C C +
+Sbjct  290  SCG-------------SGWRGSQCQEACAPGRFGADCHLQCQCQNGGTCDRFSGCVCPS  335
+
+
+ Score = 30.2 bits (66),  Expect = 7.7, Method: Composition-based stats.
+ Identities = 26/94 (28%), Positives = 30/94 (32%), Gaps = 9/94 (10%)
+
+Query  52   TCAAAAGGCATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGT------T  105
+             C     GC  G  C    G      G TG  C   C     G +    C GT      T
+Sbjct  221  DCTKECPGCLHGGVCHDQDGECVCPPGFTGTRCEQACREGRFGQSCQEQCPGTSGCRGLT  280
+
+Query  106  TCCAAATACACTTTTGGTAGAATCTGCAGGTGGA  139
+             C      C+C +   G  G+     CA G  GA
+Sbjct  281  FCLPDPYGCSCGS---GWRGSQCQEACAPGRFGA  311
+
+
+>Q9W7R4 Teneurin-3 OS=Danio rerio GN=tenm3 PE=2 SV=1
+Length=2590
+
+ Score = 30.6 bits (67),  Expect = 5.9, Method: Composition-based stats.
+ Identities = 32/138 (23%), Positives = 37/138 (27%), Gaps = 10/138 (7%)
+
+Query  10   CACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGT-----  64
+            CAC TG  G       C   + +       G   C        C      C         
+Sbjct  488  CACNTGYKGDNCEEVDCLDPSCSSHGVCIHGECHCNPGWGGNNCEILKTMCPDQCSGHGT  547
+
+Query  65   --TCAGCTGAAT--TCAGCTGAACATGCCTTTTGATGGAGC-AGTTTCCAAATACACTTT  119
+              T +G     T  T   C+   CA  C +      G   C  G T       AC    T
+Sbjct  548  YQTESGTCTCDTNWTGPDCSIEVCAVDCGSHGVCIGGSCRCEEGWTGSVCDLKACHPRCT  607
+
+Query  120  TGGTAGAATCTGCAGGTG  137
+              GT     C    G TG
+Sbjct  608  EHGTCKDGKCECHQGWTG  625
+
+
+>P35590 Tyrosine-protein kinase receptor Tie-1 OS=Homo sapiens GN=TIE1 
+PE=1 SV=1
+Length=1138
+
+ Score = 30.2 bits (66),  Expect = 8.5, Method: Composition-based stats.
+ Identities = 26/119 (22%), Positives = 32/119 (27%), Gaps = 17/119 (14%)
+
+Query  1    ATCAATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGC  60
+              C      C C  G  G     AC     G        G + C G T C        GC
+Sbjct  235  GVCHDHDGECVCPPGFTGTRCEQACREGRFGQSCQEQCPGISGCRGLTFCLP---DPYGC  291
+
+Query  61   ATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTT-TCCAAATACACTT  118
+            + G             +G  G+ C   C     GA     C       C   + C C +
+Sbjct  292  SCG-------------SGWRGSQCQEACAPGHFGADCRLQCQCQNGGTCDRFSGCVCPS  337
+
+
+
+Lambda      K        H        a         alpha
+   0.314    0.115    0.355    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0353    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5516274520
+Results from round 3
+
+
+Query= qyq
+
+Length=146
+                                                                      Score        E
+Sequences producing significant alignments:                          (Bits)     Value
+Sequences used in model and found again:
+
+Q8V9S9 Protein B602L OS=African swine fever virus (isolate Tick/M...  135        9e-37
+Q65169 Protein B602L OS=African swine fever virus (strain Badajoz...  133        7e-36
+P0CAI1 Protein B602L OS=African swine fever virus (isolate Tick/S...  109        2e-27
+P0CAI2 Protein B602L OS=African swine fever virus (isolate Wartho...  101        1e-24
+P0CAI0 Protein B602L OS=African swine fever virus (isolate Pig/Ke...  85.9       4e-19
+
+Sequences not found previously or not previously below threshold:
+
+O18735 Receptor tyrosine-protein kinase erbB-2 OS=Canis lupus fam...  36.2       0.071
+Q06805 Tyrosine-protein kinase receptor Tie-1 OS=Bos taurus GN=TI...  36.2       0.073
+O73791 Tyrosine-protein kinase receptor Tie-2 OS=Danio rerio GN=t...  35.8       0.089
+P70424 Receptor tyrosine-protein kinase erbB-2 OS=Mus musculus GN...  34.6       0.22 
+Q9DER5 Teneurin-2 OS=Gallus gallus GN=TENM2 PE=1 SV=1                 34.6       0.29 
+O65312 Histone-lysine N-methyltransferase MEDEA OS=Arabidopsis th...  34.3       0.33 
+P27470 Glucosyltransferase-I OS=Streptococcus downei PE=3 SV=1        34.3       0.36 
+Q8K1S4 Netrin receptor UNC5A OS=Mus musculus GN=Unc5a PE=1 SV=1       33.9       0.43 
+P06494 Receptor tyrosine-protein kinase erbB-2 OS=Rattus norvegic...  33.9       0.48 
+Q8I2A6 Putative zinc carboxypeptidase PFA0170c OS=Plasmodium falc...  33.9       0.52 
+B4NXB9 UPF0518 protein GE18198 OS=Drosophila yakuba GN=GE18198 PE...  33.5       0.53 
+Q61592 Growth arrest-specific protein 6 OS=Mus musculus GN=Gas6 P...  33.1       0.69 
+Q6N022 Teneurin-4 OS=Homo sapiens GN=TENM4 PE=1 SV=2                  33.1       0.73 
+Q96RW7 Hemicentin-1 OS=Homo sapiens GN=HMCN1 PE=1 SV=2                33.1       0.80 
+Q9QJ16 Immediate-early protein 2 OS=Human herpesvirus 6B (strain ...  32.7       1.2  
+P04626 Receptor tyrosine-protein kinase erbB-2 OS=Homo sapiens GN...  32.7       1.3  
+Q3UHK6 Teneurin-4 OS=Mus musculus GN=Tenm4 PE=1 SV=2                  32.3       1.4  
+Q7NBW0 Chaperone protein DnaJ OS=Mycoplasma gallisepticum (strain...  32.3       1.4  
+Q9NT68 Teneurin-2 OS=Homo sapiens GN=TENM2 PE=1 SV=3                  32.3       1.5  
+Q9ZQ47 Glycine-rich domain-containing protein 1 OS=Arabidopsis th...  32.3       1.5  
+J3SEZ3 Venom phosphodiesterase 1 OS=Crotalus adamanteus PE=1 SV=2     32.3       1.5  
+A4QNR3 Transcription factor IIIB 50 kDa subunit OS=Xenopus tropic...  32.3       1.6  
+Q9R1K2 Teneurin-2 OS=Rattus norvegicus GN=Tenm2 PE=1 SV=2             32.3       1.7  
+Q9W7R4 Teneurin-3 OS=Danio rerio GN=tenm3 PE=2 SV=1                   32.3       1.8  
+Q9Z1K9 Disintegrin and metalloproteinase domain-containing protei...  31.9       2.0  
+Q63772 Growth arrest-specific protein 6 OS=Rattus norvegicus GN=G...  31.9       2.1  
+P06719 Knob-associated histidine-rich protein OS=Plasmodium falci...  31.6       2.7  
+O08721 Netrin receptor UNC5A OS=Rattus norvegicus GN=Unc5a PE=1 SV=1  31.6       2.8  
+P41950 Dendrite extension defective protein 1 OS=Caenorhabditis e...  31.6       2.9  
+Q7M4S9 Uncharacterized protein YBL113C OS=Saccharomyces cerevisia...  31.6       2.9  
+B7JY68 Chaperone protein DnaJ OS=Cyanothece sp. (strain PCC 8801)...  30.8       4.0  
+A8MXZ3 Keratin-associated protein 9-1 OS=Homo sapiens GN=KRTAP9-1...  30.4       5.2  
+O70244 Cubilin OS=Rattus norvegicus GN=Cubn PE=1 SV=2                 30.8       5.2  
+Q9P273 Teneurin-3 OS=Homo sapiens GN=TENM3 PE=2 SV=3                  30.4       6.3  
+Q20911 Probable cubilin OS=Caenorhabditis elegans GN=ZC116.3 PE=1...  30.4       6.5  
+Q9WTS6 Teneurin-3 OS=Mus musculus GN=Tenm3 PE=1 SV=1                  30.4       7.2  
+P78536 Disintegrin and metalloproteinase domain-containing protei...  30.0       9.1  
+
+
+>Q8V9S9 Protein B602L OS=African swine fever virus (isolate Tick/Malawi/Lil 
+20-1/1983) GN=Mal-087 PE=3 SV=1
+Length=614
+
+ Score = 135 bits (339),  Expect = 9e-37, Method: Composition-based stats.
+ Identities = 24/137 (18%), Positives = 36/137 (26%), Gaps = 6/137 (4%)
+
+Query  4    AATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAA--AGGCA  61
+            A +A  CA       A+T     A+   +  A T     A T  +      A+  A   A
+Sbjct  155  AQSAYTCASTNADTSASTNADTSASTNASINADTNVDTCASTNASTNVDTNASINASTNA  214
+
+Query  62   TGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATG---GAGCAGTTT-CCAAATACACT  117
+            +       +  A+  A      CA+   +T          +  A T     A   A    
+Sbjct  215  STNVDTNASTNASINADTNVDTCASTNASTNVDTNASINASTNASTNVDTNADINANTNA  274
+
+Query  118  TTTGGTAGAATCTGCAG  134
+                        T    
+Sbjct  275  DINANINANTEYTDLTD  291
+
+
+ Score = 90.5 bits (222),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 23/130 (18%), Positives = 35/130 (27%), Gaps = 18/130 (14%)
+
+Query  24   ACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATTCAGCTGAA  83
+            A  A    +  A T+    A T  +            A+          A+T A      
+Sbjct  155  AQSAYTCASTNADTSASTNADTSASTN----------ASINADTNVDTCASTNASTNVDT  204
+
+Query  84   CATGCCTT-------TTGATGGAGCAGTTT-CCAAATACACTTTTGGTAGAATCTGCAGG  135
+             A+   +T       T  +T  +  A T    CA+  A     T      +   +     
+Sbjct  205  NASINASTNASTNVDTNASTNASINADTNVDTCASTNASTNVDTNASINASTNASTNVDT  264
+
+Query  136  TGGATATTGA  145
+                 A T A
+Sbjct  265  NADINANTNA  274
+
+
+ Score = 72.4 bits (175),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 16/109 (15%), Positives = 28/109 (26%), Gaps = 22/109 (20%)
+
+Query  38   TGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATG  97
+            +    A T               A+       +  A+  A      CA+   +T      
+Sbjct  157  SAYTCASTNADTS----------ASTNADTSASTNASINADTNVDTCASTNASTNVDTN-  205
+
+Query  98   GAGCAGTTTCCAAATACACTTTTGGTAGAATCTGCAGGTGGATATTGAT  146
+                       A+  A    +T   T  +   +  A       A+T A+
+Sbjct  206  -----------ASINASTNASTNVDTNASTNASINADTNVDTCASTNAS  243
+
+
+ Score = 42.0 bits (96),  Expect = 8e-04, Method: Composition-based stats.
+ Identities = 11/58 (19%), Positives = 14/58 (24%), Gaps = 1/58 (2%)
+
+Query  90   TTTTGATGGAGCAGTTT-CCAAATACACTTTTGGTAGAATCTGCAGGTGGATATTGAT  146
+                 A     CA T     A+  A    +T            CA         T A+
+Sbjct  150  DPNLHAQSAYTCASTNADTSASTNADTSASTNASINADTNVDTCASTNASTNVDTNAS  207
+
+
+>Q65169 Protein B602L OS=African swine fever virus (strain Badajoz 1971 
+Vero-adapted) GN=Ba71V-079 PE=3 SV=1
+Length=602
+
+ Score = 133 bits (333),  Expect = 7e-36, Method: Composition-based stats.
+ Identities = 34/130 (26%), Positives = 47/130 (36%), Gaps = 10/130 (8%)
+
+Query  5    ATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGT  64
+              A+ CA       A+TC + CA+   +  A+T     A TG + CA        CA+  
+Sbjct  160  TCASTCADTNVDTCASTCASTCASTCASTCASTCASTCASTGASTCADTNVDT--CASTC  217
+
+Query  65   TCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAATACACTTTTGGTA  124
+                    A+TCA      CA+ C  T    T  + CA T           C +T   T 
+Sbjct  218  ADTNVDTCASTCADTNVDTCASTCADTNVN-TCASMCADTNV-------DTCASTCANTC  269
+
+Query  125  GAATCTGCAG  134
+             +   T  A 
+Sbjct  270  ASTEYTDLAD  279
+
+
+ Score = 100 bits (248),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 29/122 (24%), Positives = 39/122 (32%), Gaps = 8/122 (7%)
+
+Query  23   TACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATTCAGCTGA  82
+               CA+        T     A T  + CA+       CA+       +  A+TCA     
+Sbjct  158  AYTCASTCADTNVDTCASTCASTCASTCAST------CASTCASTCASTGASTCADTNVD  211
+
+Query  83   ACATGCCTTTTGATGGAGCAGTTT-CCAAATACACTTTTGGTAGAATCTGCAGGTGGATA  141
+             CA+ C  T    T  + CA T    CA+  A     T            CA       A
+Sbjct  212  TCASTCADTNVD-TCASTCADTNVDTCASTCADTNVNTCASMCADTNVDTCASTCANTCA  270
+
+Query  142  TT  143
+            +T
+Sbjct  271  ST  272
+
+
+ Score = 86.6 bits (212),  Expect = 2e-19, Method: Composition-based stats.
+ Identities = 28/114 (25%), Positives = 38/114 (33%), Gaps = 8/114 (7%)
+
+Query  34   TATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATTCAGCTGAACATGCCTTTT  93
+            +A T     A T    CA+       CA+       +  A+TCA    +  A+ C  T  
+Sbjct  157  SAYTCASTCADTNVDTCAST------CASTCASTCASTCASTCASTCASTGASTCADTNV  210
+
+Query  94   GATGGAGCAGTTT-CCAAATACACTTTTGGTAGAATCTGCAGGTGGATATTGAT  146
+              T  + CA T    CA+  A     T   T        CA         T A+
+Sbjct  211  D-TCASTCADTNVDTCASTCADTNVDTCASTCADTNVNTCASMCADTNVDTCAS  263
+
+
+ Score = 84.7 bits (207),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 27/97 (28%), Positives = 37/97 (38%), Gaps = 4/97 (4%)
+
+Query  54   AAAAGGCATGTTCAGCTGAATTCAGCTGAACATGCCTT---TTGATGGAGCAGTTT-CCA  109
+            A +A  CA+          A+TCA    + CA+ C +T   T  +TG + CA T    CA
+Sbjct  155  AQSAYTCASTCADTNVDTCASTCASTCASTCASTCASTCASTCASTGASTCADTNVDTCA  214
+
+Query  110  AATACACTTTTGGTAGAATCTGCAGGTGGATATTGAT  146
+            +  A     T   T        CA         T A+
+Sbjct  215  STCADTNVDTCASTCADTNVDTCASTCADTNVNTCAS  251
+
+
+ Score = 57.0 bits (135),  Expect = 5e-09, Method: Composition-based stats.
+ Identities = 21/92 (23%), Positives = 28/92 (30%), Gaps = 23/92 (25%)
+
+Query  1    ATCAAT-ATCCACCTGCAGATTCTAC--------CAAAAGTGTATTTGGAAACTGCTCCA  51
+            +TCA+T A+ CA       A+TC           CA         T     A T      
+Sbjct  195  STCASTGASTCADTNVDTCASTCADTNVDTCASTCA----DTNVDTCASTCADTNVNT--  248
+
+Query  52   TCAAAAGGCATGTTCAGCTGAATTCAGCTGAA  83
+                    CA+          A+TCA    + 
+Sbjct  249  --------CASMCADTNVDTCASTCANTCAST  272
+
+
+>P0CAI1 Protein B602L OS=African swine fever virus (isolate Tick/South 
+Africa/Pretoriuskop Pr4/1996) GN=Pret-091 PE=3 SV=1
+Length=570
+
+ Score = 109 bits (271),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 22/100 (22%), Positives = 30/100 (30%), Gaps = 12/100 (12%)
+
+Query  38   TGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATTCAGCTGAACATGCCTT---TTG  94
+            +    A T  +  A         A+          A+TCA      CA  C +T   T  
+Sbjct  157  SAYTCADTNASTSADTN------ASTCADTNVDTCASTCADTNVDTCADTCASTCASTCA  210
+
+Query  95   ATGGAGCAGTTTCCAAATACACTTTTGGTAGAATCTGCAG  134
+            +T  + CA T        A  C +T   T         A 
+Sbjct  211  STCASTCADTNV---DTCADTCVSTCASTCANTEYADLAD  247
+
+
+ Score = 88.2 bits (216),  Expect = 6e-20, Method: Composition-based stats.
+ Identities = 26/93 (28%), Positives = 32/93 (34%), Gaps = 8/93 (9%)
+
+Query  54   AAAAGGCATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAATA  113
+            A +A  CA           A+TCA      CA+ C  T         CA T   CA+  A
+Sbjct  155  AQSAYTCADTNASTSADTNASTCADTNVDTCASTCADTNVD-----TCADT---CASTCA  206
+
+Query  114  CACTTTTGGTAGAATCTGCAGGTGGATATTGAT  146
+              C +T   T        CA       A+T A 
+Sbjct  207  STCASTCASTCADTNVDTCADTCVSTCASTCAN  239
+
+
+ Score = 87.8 bits (215),  Expect = 7e-20, Method: Composition-based stats.
+ Identities = 18/82 (22%), Positives = 24/82 (29%), Gaps = 6/82 (7%)
+
+Query  5    ATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGT  64
+              A+ CA       A+TC            A+T     A T  + CA             
+Sbjct  172  TNASTCADTNVDTCASTCADTNVDTCADTCASTCASTCASTCASTCADTNVD------TC  225
+
+Query  65   TCAGCTGAATTCAGCTGAACAT  86
+                 +  A+TCA    A  A 
+Sbjct  226  ADTCVSTCASTCANTEYADLAD  247
+
+
+ Score = 50.4 bits (118),  Expect = 8e-07, Method: Composition-based stats.
+ Identities = 13/62 (21%), Positives = 16/62 (26%), Gaps = 5/62 (8%)
+
+Query  90   TTTTGATGGAGCAGTTT-----CCAAATACACTTTTGGTAGAATCTGCAGGTGGATATTG  144
+                 A     CA T         A+  A     T   T        CA       A+T 
+Sbjct  150  DPNLHAQSAYTCADTNASTSADTNASTCADTNVDTCASTCADTNVDTCADTCASTCASTC  209
+
+Query  145  AT  146
+            A+
+Sbjct  210  AS  211
+
+
+ Score = 46.2 bits (107),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 13/45 (29%), Positives = 18/45 (40%), Gaps = 1/45 (2%)
+
+Query  1    ATCAAT-ATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAAC  44
+            +TCA+T A+ CA         TC   C +   +  A T     A 
+Sbjct  203  STCASTCASTCASTCADTNVDTCADTCVSTCASTCANTEYADLAD  247
+
+
+>P0CAI2 Protein B602L OS=African swine fever virus (isolate Warthog/Namibia/Wart80/1980) 
+GN=War-089 PE=3 SV=1
+Length=550
+
+ Score = 101 bits (250),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 17/75 (23%), Positives = 22/75 (29%), Gaps = 6/75 (8%)
+
+Query  61   ATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTT-CCAAATACACTTT  119
+            A           A+TCA     +C     T T   T  + CA T    C       C +T
+Sbjct  158  AYTCADTNVDTCASTCADTNIDSC-----TDTNEDTCASTCADTNIDSCTDTNEDTCAST  212
+
+Query  120  TGGTAGAATCTGCAG  134
+               T  +      A 
+Sbjct  213  CASTCTSTEYADLAD  227
+
+
+ Score = 92.4 bits (227),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 14/75 (19%), Positives = 19/75 (25%), Gaps = 2/75 (3%)
+
+Query  4    AATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATG  63
+            A +A  CA       A+TC      +       T     A T    C         CA+ 
+Sbjct  155  AQSAYTCADTNVDTCASTCADTNIDSCTDTNEDTCASTCADTNIDSCTDTNEDT--CAST  212
+
+Query  64   TTCAGCTGAATTCAG  78
+                  +      A 
+Sbjct  213  CASTCTSTEYADLAD  227
+
+
+ Score = 87.8 bits (215),  Expect = 7e-20, Method: Composition-based stats.
+ Identities = 13/72 (18%), Positives = 17/72 (24%), Gaps = 2/72 (3%)
+
+Query  24   ACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATTCAGCTGAA  83
+            A  A         T     A T    C         CA+            T      + 
+Sbjct  155  AQSAYTCADTNVDTCASTCADTNIDSCTDTNEDT--CASTCADTNIDSCTDTNEDTCAST  212
+
+Query  84   CATGCCTTTTGA  95
+            CA+ C +T    
+Sbjct  213  CASTCTSTEYAD  224
+
+
+ Score = 67.8 bits (163),  Expect = 9e-13, Method: Composition-based stats.
+ Identities = 18/135 (13%), Positives = 30/135 (22%), Gaps = 17/135 (13%)
+
+Query  13   CTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTG-  71
+                          + +      +        T  +  A     +               
+Sbjct  97   TLVDTLKQETNDVPSESVVNTILSIADSCKTQTQKSKEAKTTIDSFLREHFVFDPNLHAQ  156
+
+Query  72   AATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAATACACTTTTGGTAGAATCTG  131
+            +A TCA      CA+ C  T   +            C       C +T   T   +    
+Sbjct  157  SAYTCADTNVDTCASTCADTNIDS------------CTDTNEDTCASTCADTNIDS----  200
+
+Query  132  CAGGTGGATATTGAT  146
+            C        A+T A+
+Sbjct  201  CTDTNEDTCASTCAS  215
+
+
+>P0CAI0 Protein B602L OS=African swine fever virus (isolate Pig/Kenya/KEN-50/1950) 
+GN=Ken-091 PE=3 SV=1
+Length=543
+
+ Score = 85.9 bits (210),  Expect = 4e-19, Method: Composition-based stats.
+ Identities = 16/72 (22%), Positives = 22/72 (31%), Gaps = 10/72 (14%)
+
+Query  23   TACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATTCAGCTGA  82
+               CA+   +  A+T     A T    C         CA+          A+TCA     
+Sbjct  158  AYTCASTCASTCASTCASTCADTNVDTCTDT------CASTCADTNVDTCASTCAD----  207
+
+Query  83   ACATGCCTTTTG  94
+             CA+   T    
+Sbjct  208  TCASTEYTDLMD  219
+
+
+ Score = 85.1 bits (208),  Expect = 8e-19, Method: Composition-based stats.
+ Identities = 18/81 (22%), Positives = 25/81 (31%), Gaps = 16/81 (20%)
+
+Query  54   AAAAGGCATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAATA  113
+            A +A  CA+       +  A+TCA      C   C +T         CA T         
+Sbjct  155  AQSAYTCASTCASTCASTCASTCADTNVDTCTDTCAST---------CADTNV-------  198
+
+Query  114  CACTTTTGGTAGAATCTGCAG  134
+              C +T   T  +   T    
+Sbjct  199  DTCASTCADTCASTEYTDLMD  219
+
+
+ Score = 82.0 bits (200),  Expect = 8e-18, Method: Composition-based stats.
+ Identities = 17/60 (28%), Positives = 22/60 (37%), Gaps = 2/60 (3%)
+
+Query  4    AATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATG  63
+            A +A  CA       A+TC + CA         T     A T    CA+  A    CA+ 
+Sbjct  155  AQSAYTCASTCASTCASTCASTCADTNVDTCTDTCASTCADTNVDTCASTCADT--CAST  212
+
+
+ Score = 67.0 bits (161),  Expect = 1e-12, Method: Composition-based stats.
+ Identities = 16/61 (26%), Positives = 21/61 (34%), Gaps = 8/61 (13%)
+
+Query  83   ACATGCCTTTTGATGGAGCAGTTTCCAAATACACTTTTGGTAGAATCTGCAGGTGGATAT  142
+             CA+ C +T   +T  + CA T           CT T   T        CA       A+
+Sbjct  160  TCASTCAST-CASTCASTCADTNV-------DTCTDTCASTCADTNVDTCASTCADTCAS  211
+
+Query  143  T  143
+            T
+Sbjct  212  T  212
+
+
+ Score = 52.0 bits (122),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 17/89 (19%), Positives = 24/89 (27%), Gaps = 11/89 (12%)
+
+Query  69   CTGAATTCAGCTGAACATGCCTTTTGATG-------GAGCAGTTTCCAAATACACTTTTG  121
+                 +    C      +    TT  +             A +   CA+  A  C +T  
+Sbjct  115  VNTLLSIADNCKTQTQKSTEAKTTIDSFLREHFVFDPNLHAQSAYTCASTCASTCASTCA  174
+
+Query  122  GTAGAA---TCTG-CAGGTGGATATTGAT  146
+             T       TCT  CA         T A+
+Sbjct  175  STCADTNVDTCTDTCASTCADTNVDTCAS  203
+
+
+>O18735 Receptor tyrosine-protein kinase erbB-2 OS=Canis lupus familiaris 
+GN=ERBB2 PE=2 SV=1
+Length=1259
+
+ Score = 36.2 bits (81),  Expect = 0.071, Method: Composition-based stats.
+ Identities = 12/76 (16%), Positives = 17/76 (22%), Gaps = 7/76 (9%)
+
+Query  61   ATGTTCAG----CTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAATACAC  116
+            A           C   +  C        ++G C + T      GCA    C        C
+Sbjct  180  ALTLIDTNRFSACPPCSPACKDAHCWGASSGDCQSLTRTVCAGGCAR---CKGPQPTDCC  236
+
+Query  117  TTTTGGTAGAATCTGC  132
+                         + C
+Sbjct  237  HEQCAAGCTGPKHSDC  252
+
+
+ Score = 32.3 bits (71),  Expect = 1.5, Method: Composition-based stats.
+ Identities = 23/155 (15%), Positives = 31/155 (20%), Gaps = 16/155 (10%)
+
+Query  4    AATATCCACCTGCAGATTCT--------ACCAAAAGTGTATTTGGAA-ACTGCTCCATCA  54
+             A++  C   T    A  C          CC      G          AC        C 
+Sbjct  206  GASSGDCQSLTRTVCAGGCARCKGPQPTDCCHEQCAAGCTGPKHSDCLACLHFNHSGICE  265
+
+Query  55   AAAGGCATGTTCAGCTGAATTCAGCTGAACATGCC----TTTTGA---TGGAGCAGTTTC  107
+                   T  T    +          GA+C T C     +T  G+            T  
+Sbjct  266  LHCPALVTYNTDTFESMPNPEGRYTFGASCVTSCPYNYLSTDVGSCTLVCPLNNQEVTAE  325
+
+Query  108  CAAATACACTTTTGGTAGAATCTGCAGGTGGATAT  142
+                    C+                      +A 
+Sbjct  326  DGTQRCEKCSKPCARVCYGLGMEHLREVRAVTSAN  360
+
+
+>Q06805 Tyrosine-protein kinase receptor Tie-1 OS=Bos taurus GN=TIE1 
+PE=2 SV=1
+Length=1136
+
+ Score = 36.2 bits (81),  Expect = 0.073, Method: Composition-based stats.
+ Identities = 21/105 (20%), Positives = 24/105 (23%), Gaps = 12/105 (11%)
+
+Query  52   TCAAAAGGCATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGT------T  105
+             C     GC  G  C    G      G TG  C   C     G +    C GT      T
+Sbjct  221  DCTKECPGCLHGGVCHDQDGECVCPPGFTGTRCEQACREGRFGQSCQEQCPGTSGCRGLT  280
+
+Query  106  TCCAAATACAC-----TTTTGGTAGAATC-TGCAGGTGGATATTG  144
+             C      C+C      +              C          T 
+Sbjct  281  FCLPDPYGCSCGSGWRGSQCQEACAPGRFGADCHLQCQCQNGGTC  325
+
+
+>O73791 Tyrosine-protein kinase receptor Tie-2 OS=Danio rerio GN=tie2 
+PE=2 SV=1
+Length=1116
+
+ Score = 35.8 bits (80),  Expect = 0.089, Method: Composition-based stats.
+ Identities = 34/159 (21%), Positives = 40/159 (25%), Gaps = 15/159 (9%)
+
+Query  1    ATCAATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACT----GCTCCATCAAA  56
+            ++ A T      C        CT  C   A  G    T G   C     G TC   C   
+Sbjct  203  SSAAITRLIVRSCRAGFWGPNCTESCPRCANGGVCDDTTGECVCPPGFRGHTCDIVCGEG  262
+
+Query  57   --AGGCATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATG-----GAGCAGTTTC--  107
+                GC        C           G +CA+G    +          GAGC     C  
+Sbjct  263  RFGAGCKERCVDGVCRALVFCLRDPYGCSCASGWRGLSCNDACPDGYYGAGCTQKCVCAK  322
+
+Query  108  --CAAATACACTTTTGGTAGAATCTGCAGGTGGATATTG  144
+              C     C C    G     A  +            TG
+Sbjct  323  GRCDRFRGCVCAGRHGSRCEEADSSPVISHLRDVEINTG  361
+
+
+>P70424 Receptor tyrosine-protein kinase erbB-2 OS=Mus musculus GN=Erbb2 
+PE=1 SV=3
+Length=1256
+
+ Score = 34.6 bits (77),  Expect = 0.22, Method: Composition-based stats.
+ Identities = 14/79 (18%), Positives = 17/79 (22%), Gaps = 3/79 (4%)
+
+Query  54   AAAAGGCATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAATA  113
+               A           C   A TC        +   C   TG    +GCA    C      
+Sbjct  178  NQLAPVDMDTNRSRACPPCAPTCKDNHCWGESPEDCQILTGTICTSGCAR---CKGRLPT  234
+
+Query  114  CACTTTTGGTAGAATCTGC  132
+              C             + C
+Sbjct  235  DCCHEQCAAGCTGPKHSDC  253
+
+
+ Score = 34.3 bits (76),  Expect = 0.34, Method: Composition-based stats.
+ Identities = 22/127 (17%), Positives = 27/127 (21%), Gaps = 8/127 (6%)
+
+Query  6    TATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAA-ACTGCTCCATCAAAAGGCATGT  64
+            T T C            T CC      G          AC        C        T  
+Sbjct  217  TGTICTSGCARCKGRLPTDCCHEQCAAGCTGPKHSDCLACLHFNHSGICELHCPALITYN  276
+
+Query  65   TCAGCTGAATTCAGCTGAACATGCC----TTTTGA---TGGAGCAGTTTCCAAATACACT  117
+            T    +          GA+C T C     +T  G+            T          C+
+Sbjct  277  TDTFESMLNPEGRYTFGASCVTTCPYNYLSTEVGSCTLVCPPNNQEVTAEDGTQRCEKCS  336
+
+Query  118  TTTGGTA  124
+                G  
+Sbjct  337  KPCAGVC  343
+
+
+>Q9DER5 Teneurin-2 OS=Gallus gallus GN=TENM2 PE=1 SV=1
+Length=2802
+
+ Score = 34.6 bits (77),  Expect = 0.29, Method: Composition-based stats.
+ Identities = 21/136 (15%), Positives = 22/136 (16%), Gaps = 13/136 (10%)
+
+Query  3    CAATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCAT  62
+            C     C      C    T  AC           T  G      C C             
+Sbjct  771  CGTHGVCIGGACRCEEGWTGVACDQRVCHPRC--TEHGTCKDGKCECREGWNGEHCTIGR  828
+
+Query  63   GTTCAGCTGAATTCAGCTGAA---------CATGCCTTTTGATGGAGCAGTTTCCAAATA  113
+             TT     G    C G              C TG             CA           
+Sbjct  829  QTTGTETDGCPDLCNGNGRCTLGQNSWQCVCQTGWRGPGCNVAMETSCADNKDNEGDGLV  888
+
+Query  114  CACTTTTG--GTAGAA  127
+                       T   +
+Sbjct  889  DCLVPDCCLQSTCQNS  904
+
+
+>O65312 Histone-lysine N-methyltransferase MEDEA OS=Arabidopsis thaliana 
+GN=MEA PE=1 SV=1
+Length=689
+
+ Score = 34.3 bits (76),  Expect = 0.33, Method: Composition-based stats.
+ Identities = 17/79 (22%), Positives = 19/79 (24%), Gaps = 9/79 (11%)
+
+Query  25   CCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTG----AATTCAGCT  80
+             C +  G      T        C C   C    GGC        CT            C 
+Sbjct  451  TCKSKCGQQCPCLTHENCCEKYCGCSKDCNNRFGGC--NCAIGQCTNRQCPCFAANRECD  508
+
+Query  81   GAACAT---GCCTTTTGAT  96
+               C +    C   T G T
+Sbjct  509  PDLCRSCPLSCGDGTLGET  527
+
+
+>P27470 Glucosyltransferase-I OS=Streptococcus downei PE=3 SV=1
+Length=1592
+
+ Score = 34.3 bits (76),  Expect = 0.36, Method: Composition-based stats.
+ Identities = 19/101 (19%), Positives = 28/101 (28%), Gaps = 1/101 (1%)
+
+Query  17   AGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATTC  76
+            A AT   +   A+  +    T    +  T  T   T    A    +    A    +A+T 
+Sbjct  22   ASATMLASALGASVASADTDTASDDSNQTVVTGDQTTNNQATDQTSIAATATSEQSASTD  81
+
+Query  77   AGCTGAACAT-GCCTTTTGATGGAGCAGTTTCCAAATACAC  116
+            A    A+ A     TT +  T               T    
+Sbjct  82   AATDQASAAEQTQGTTASTDTAAQTTTNANEAKWVPTENEN  122
+
+
+ Score = 32.3 bits (71),  Expect = 1.4, Method: Composition-based stats.
+ Identities = 18/94 (19%), Positives = 26/94 (28%), Gaps = 2/94 (2%)
+
+Query  5    ATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGT  64
+            A+AT  A   G + A+  T   +  +     T                  A +   A+  
+Sbjct  22   ASATMLASALGASVASADTDTASDDSNQTVVTGDQTTNNQATDQTSIAATATSEQSASTD  81
+
+Query  65   TCAGCTGAATTCAGCTGAACATGCCTTTTGATGG  98
+                   AA    G T +        TTT A   
+Sbjct  82   AATDQASAAEQTQGTTAST--DTAAQTTTNANEA  113
+
+
+ Score = 31.9 bits (70),  Expect = 2.1, Method: Composition-based stats.
+ Identities = 16/96 (17%), Positives = 24/96 (25%), Gaps = 0/96 (0%)
+
+Query  29   AAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATTCAGCTGAACATGC  88
+                 +AT    A   +  +     A+        T        AT        A +   
+Sbjct  18   TLSVASATMLASALGASVASADTDTASDDSNQTVVTGDQTTNNQATDQTSIAATATSEQS  77
+
+Query  89   CTTTTGATGGAGCAGTTTCCAAATACACTTTTGGTA  124
+             +T       +    T    A+    A TTT    A
+Sbjct  78   ASTDAATDQASAAEQTQGTTASTDTAAQTTTNANEA  113
+
+
+>Q8K1S4 Netrin receptor UNC5A OS=Mus musculus GN=Unc5a PE=1 SV=1
+Length=898
+
+ Score = 33.9 bits (75),  Expect = 0.43, Method: Composition-based stats.
+ Identities = 27/135 (20%), Positives = 40/135 (30%), Gaps = 5/135 (4%)
+
+Query  4    AATATCCACCTGCAGATTCTACCAAAAGTG---TATTTGGAAACTGCTCCATCAAAAGGC  60
+            +A+A       G     T  + C+A+ G G    + +    A   G   C         C
+Sbjct  232  SASAAVIVYVNGGWSTWTEWSVCSASCGRGWQKRSRSCTNPAPLNGGAFCEGQNVQKTAC  291
+
+Query  61   ATGTTCAGCTGAATTCAGCTGAAC--ATGCCTTTTGATGGAGCAGTTTCCAAATACACTT  118
+            AT     G     +  + C        +  C+      GG  C G        T+  C  
+Sbjct  292  ATLCPVDGSWSPWSKWSACGLDCTHWRSRECSDPAPRNGGEECRGADLDTRNCTSDLCLH  351
+
+Query  119  TTGGTAGAATCTGCA  133
+            T+ G    A   G  
+Sbjct  352  TSSGPEDVALYIGLV  366
+
+
+>P06494 Receptor tyrosine-protein kinase erbB-2 OS=Rattus norvegicus 
+GN=Erbb2 PE=1 SV=3
+Length=1257
+
+ Score = 33.9 bits (75),  Expect = 0.48, Method: Composition-based stats.
+ Identities = 20/128 (16%), Positives = 24/128 (19%), Gaps = 4/128 (3%)
+
+Query  6    TATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAA-ACTGCTCCATCAAAAGGCATGT  64
+            T T C            T CC      G          AC        C        T  
+Sbjct  217  TGTICTSGCARCKGRLPTDCCHEQCAAGCTGPKHSDCLACLHFNHSGICELHCPALVTYN  276
+
+Query  65   TCAGCTGAATTCAGCTGAACATGCCT---TTTGATGGAGCAGTTTCCAAATACACTTTTG  121
+            T    +          GA+C T C     +T   +    C        A           
+Sbjct  277  TDTFESMHNPEGRYTFGASCVTTCPYNYLSTEVGSCTLVCPPNNQEVTAEDGTQRCEKCS  336
+
+Query  122  GTAGAATC  129
+                    
+Sbjct  337  KPCARVCY  344
+
+
+ Score = 33.1 bits (73),  Expect = 0.76, Method: Composition-based stats.
+ Identities = 13/79 (16%), Positives = 16/79 (20%), Gaps = 3/79 (4%)
+
+Query  54   AAAAGGCATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAATA  113
+               A           C   A  C        +   C   TG    +GCA    C      
+Sbjct  178  NQLAPVDIDTNRSRACPPCAPACKDNHCWGESPEDCQILTGTICTSGCAR---CKGRLPT  234
+
+Query  114  CACTTTTGGTAGAATCTGC  132
+              C             + C
+Sbjct  235  DCCHEQCAAGCTGPKHSDC  253
+
+
+>Q8I2A6 Putative zinc carboxypeptidase PFA0170c OS=Plasmodium falciparum 
+(isolate 3D7) GN=PFA0170c PE=2 SV=1
+Length=1620
+
+ Score = 33.9 bits (75),  Expect = 0.52, Method: Composition-based stats.
+ Identities = 15/65 (23%), Positives = 17/65 (26%), Gaps = 4/65 (6%)
+
+Query  54   AAAAGGCATGTT--CAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAA  111
+                 GCA+G T  CA       T     G  C  GC    +       C      C   
+Sbjct  851  NGCTRGCASGCTNGCANGYTNGYTNRYTKG--CTKGCTNEYSNDNMCKECLDIKNICYQE  908
+
+Query  112  TACAC  116
+                C
+Sbjct  909  EKEKC  913
+
+
+>B4NXB9 UPF0518 protein GE18198 OS=Drosophila yakuba GN=GE18198 PE=3 
+SV=1
+Length=1050
+
+ Score = 33.5 bits (74),  Expect = 0.53, Method: Composition-based stats.
+ Identities = 30/149 (20%), Positives = 48/149 (32%), Gaps = 20/149 (13%)
+
+Query  5     ATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATG-  63
+              +A+  +       + +       A  TG A+   G  A T     +    +AG C T  
+Sbjct  871   KSASNTSTTPPNGSSASSGLSQIYAFFTGAASNLVGTNASTDGRGMSHAQTSAGTCETSL  930
+
+Query  64    --------------TTCAGCTGAATTCAGCTGAACATGCCTTTTGAT-----GGAGCAGT  104
+                            T A  +G+ ++ AG T    A    TT + +T     GG    G 
+Sbjct  931   STQPQAGAPRTGAIATSATASGSNSSIAGSTLTLSAQSNTTTHSASTLHGLDGGPSTGGF  990
+
+Query  105   TTCCAAATACACTTTTGGTAGAATCTGCA  133
+              +  A+  + A       T+G       A
+Sbjct  991   NSEPASLDSVASMGIIASTSGTERSRDLA  1019
+
+
+>Q61592 Growth arrest-specific protein 6 OS=Mus musculus GN=Gas6 PE=2 
+SV=2
+Length=674
+
+ Score = 33.1 bits (73),  Expect = 0.69, Method: Composition-based stats.
+ Identities = 18/123 (15%), Positives = 27/123 (22%), Gaps = 8/123 (7%)
+
+Query  3    CAATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCAT  62
+            C      C+        +   AC +  +      T      CT    C          + 
+Sbjct  157  CVQKNGGCSQVCHNKPGSFQCACHSGFSLASDGQTCQDIDECTDSDTCGDARCKNLPGSY  216
+
+Query  63   GTTCAGCTGAAT---TCAG---CTGAACATGCCTTTTGATGGAGCAGTTTCCAAATACAC  116
+               C      ++   TC     C    C   C  +    T    C G      +     C
+Sbjct  217  SCLCDEGYTYSSKEKTCQDVDECQQDRCEQTCVNSPGSYTCH--CDGRGGLKLSPDMDTC  274
+
+Query  117  TTT  119
+               
+Sbjct  275  EDI  277
+
+
+>Q6N022 Teneurin-4 OS=Homo sapiens GN=TENM4 PE=1 SV=2
+Length=2769
+
+ Score = 33.1 bits (73),  Expect = 0.73, Method: Composition-based stats.
+ Identities = 26/149 (17%), Positives = 30/149 (20%), Gaps = 14/149 (9%)
+
+Query  1    ATCAATATCC---ACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAA  57
+            A C      C   AC       T    C     G               C+    C    
+Sbjct  621  AECDVPTNQCIDVACSNHGTCITGTCICNPGYKGESCEEVD---CMDPTCSGRGVCVRGE  677
+
+Query  58   GGCATGTTCAGCTGAATTCAG-CTG------AACATGCCTTTTGATGG-AGCAGTTTCCA  109
+              C+ G     C     TC   C+G            C  + TG       CA       
+Sbjct  678  CHCSVGWGGTNCETPRATCLDQCSGHGTFLPDTGLCSCDPSWTGHDCSIEICAADCGGHG  737
+
+Query  110  AATACACTTTTGGTAGAATCTGCAGGTGG  138
+                  C    G    A     C      
+Sbjct  738  VCVGGTCRCEDGWMGAACDQRACHPRCAE  766
+
+
+ Score = 30.8 bits (67),  Expect = 5.7, Method: Composition-based stats.
+ Identities = 33/153 (22%), Positives = 38/153 (25%), Gaps = 16/153 (10%)
+
+Query  3    CAATATCCACCTGCAGATTCTACCAAAAGTGTATTTG----GAAAC------TGCTC-CA  51
+            C+   TC      C       +C        T +  G    G   C      T C    A
+Sbjct  635  CSNHGTCITGTCICNPGYKGESCEEVDCMDPTCSGRGVCVRGECHCSVGWGGTNCETPRA  694
+
+Query  52   TCAAAAGGCATGTTCAGCTGA--ATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCA  109
+            TC     G  T     G      + T   C+   CA  C        G   C       A
+Sbjct  695  TCLDQCSGHGTFLPDTGLCSCDPSWTGHDCSIEICAADCGGHGVCVGGTCRCED-GWMGA  753
+
+Query  110  AATACACTTTTG--GTAGAATCTGCAGGTGGAT  140
+            A    AC       GT     C    G  G   
+Sbjct  754  ACDQRACHPRCAEHGTCRDGKCECSPGWNGEHC  786
+
+
+>Q96RW7 Hemicentin-1 OS=Homo sapiens GN=HMCN1 PE=1 SV=2
+Length=5635
+
+ Score = 33.1 bits (73),  Expect = 0.80, Method: Composition-based stats.
+ Identities = 23/125 (18%), Positives = 34/125 (27%), Gaps = 7/125 (6%)
+
+Query  6     TATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTT  65
+             +  C +  T  +    C      AAG   + +   A     C+    C       A G T
+Sbjct  5089  SNQCPSGFTLDSVGPFCADEDECAAGNPCSHSCHNAMGTYYCS----CPKGLTIAADGRT  5144
+
+Query  66    CAGCTGAATTCAGCT-GAACATGCCTTTTGATGGAGCAGTT--TCCAAATACACTTTTGG  122
+             C      A     C  G  C     +       G+G   T+    C     C  ++    
+Sbjct  5145  CQDIDECALGRHTCHAGQDCDNTIGSYRCVVRCGSGFRRTSDGLSCQDINECQESSPCHQ  5204
+
+Query  123   TAGAA  127
+                 A
+Sbjct  5205  RCFNA  5209
+
+
+>Q9QJ16 Immediate-early protein 2 OS=Human herpesvirus 6B (strain Z29) 
+GN=U90/U86 PE=3 SV=1
+Length=1520
+
+ Score = 32.7 bits (72),  Expect = 1.2, Method: Composition-based stats.
+ Identities = 11/101 (11%), Positives = 25/101 (25%), Gaps = 0/101 (0%)
+
+Query  10   CACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGC  69
+            C      + +   T    +      A+    A A    T  +   + +   +        
+Sbjct  630  CNETIIPSTSACPTQETPSTMNRNCASKKHSAGANKNLTDNSPIRSHSNPSSFTAFNKSN  689
+
+Query  70   TGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAA  110
+            +G +T  +   G  C       ++          T    + 
+Sbjct  690  SGNSTMNSTSNGDECTDKKPNCSSTENKSETSNQTNGENSD  730
+
+
+>P04626 Receptor tyrosine-protein kinase erbB-2 OS=Homo sapiens GN=ERBB2 
+PE=1 SV=1
+Length=1255
+
+ Score = 32.7 bits (72),  Expect = 1.3, Method: Composition-based stats.
+ Identities = 12/76 (16%), Positives = 17/76 (22%), Gaps = 7/76 (9%)
+
+Query  61   ATGTTCAG----CTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAATACAC  116
+            A           C   +  C G      ++  C + T      GCA    C        C
+Sbjct  180  ALTLIDTNRSRACHPCSPMCKGSRCWGESSEDCQSLTRTVCAGGCAR---CKGPLPTDCC  236
+
+Query  117  TTTTGGTAGAATCTGC  132
+                         + C
+Sbjct  237  HEQCAAGCTGPKHSDC  252
+
+
+ Score = 31.2 bits (68),  Expect = 3.9, Method: Composition-based stats.
+ Identities = 22/155 (14%), Positives = 30/155 (19%), Gaps = 16/155 (10%)
+
+Query  4    AATATCCACCTGCAGATTCT--------ACCAAAAGTGTATTTGGAA-ACTGCTCCATCA  54
+              ++  C   T    A  C          CC      G          AC        C 
+Sbjct  206  GESSEDCQSLTRTVCAGGCARCKGPLPTDCCHEQCAAGCTGPKHSDCLACLHFNHSGICE  265
+
+Query  55   AAAGGCATGTTCAGCTGAATTCAGCTGAACATGCC----TTTTGA---TGGAGCAGTTTC  107
+                   T  T    +          GA+C T C     +T  G+            T  
+Sbjct  266  LHCPALVTYNTDTFESMPNPEGRYTFGASCVTACPYNYLSTDVGSCTLVCPLHNQEVTAE  325
+
+Query  108  CAAATACACTTTTGGTAGAATCTGCAGGTGGATAT  142
+                    C+                      +A 
+Sbjct  326  DGTQRCEKCSKPCARVCYGLGMEHLREVRAVTSAN  360
+
+
+>Q3UHK6 Teneurin-4 OS=Mus musculus GN=Tenm4 PE=1 SV=2
+Length=2771
+
+ Score = 32.3 bits (71),  Expect = 1.4, Method: Composition-based stats.
+ Identities = 24/146 (16%), Positives = 30/146 (21%), Gaps = 8/146 (5%)
+
+Query  1    ATCAATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGC  60
+            A C      C      +  T     C    G    +          C+    C      C
+Sbjct  623  AECDVPTNQCIDVACSSHGTCIMGTCICNPGYKGESCEEVDCMDPTCSSRGVCVRGECHC  682
+
+Query  61   ATGTTCAGCTGAATTCAG-CTG------AACATGCCTTTTGATGG-AGCAGTTTCCAAAT  112
+            + G     C     TC   C+G            C  + TG       CA          
+Sbjct  683  SVGWGGTNCETPRATCLDQCSGHGTFLPDTGLCNCDPSWTGHDCSIEICAADCGGHGVCV  742
+
+Query  113  ACACTTTTGGTAGAATCTGCAGGTGG  138
+               C    G    A     C      
+Sbjct  743  GGTCRCEDGWMGAACDQRACHPRCAE  768
+
+
+ Score = 31.6 bits (69),  Expect = 2.4, Method: Composition-based stats.
+ Identities = 33/153 (22%), Positives = 40/153 (26%), Gaps = 16/153 (10%)
+
+Query  3    CAATATCCACCTGCAGATTCTACCAAAAGTGTATTTG----GAAAC------TGCTC-CA  51
+            C++  TC      C       +C        T ++ G    G   C      T C    A
+Sbjct  637  CSSHGTCIMGTCICNPGYKGESCEEVDCMDPTCSSRGVCVRGECHCSVGWGGTNCETPRA  696
+
+Query  52   TCAAAAGGCATGTTCAGCTGA--ATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCA  109
+            TC     G  T     G      + T   C+   CA  C        G   C       A
+Sbjct  697  TCLDQCSGHGTFLPDTGLCNCDPSWTGHDCSIEICAADCGGHGVCVGGTCRCED-GWMGA  755
+
+Query  110  AATACACTTTTG--GTAGAATCTGCAGGTGGAT  140
+            A    AC       GT     C    G  G   
+Sbjct  756  ACDQRACHPRCAEHGTCRDGKCECSPGWNGEHC  788
+
+
+>Q7NBW0 Chaperone protein DnaJ OS=Mycoplasma gallisepticum (strain R(low 
+/ passage 15 / clone 2)) GN=dnaJ PE=3 SV=2
+Length=391
+
+ Score = 32.3 bits (71),  Expect = 1.4, Method: Composition-based stats.
+ Identities = 12/64 (19%), Positives = 14/64 (22%), Gaps = 0/64 (0%)
+
+Query  19   ATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATTCAG  78
+            A  C                G  +A      C+ C           T  G      TC  
+Sbjct  143  ANGCIKNVKYTRQVTCPDCNGSGSADGDVITCSDCNGEGFLVEQRRTLLGMFQTKKTCPS  202
+
+Query  79   CTGA  82
+            C G 
+Sbjct  203  CKGE  206
+
+
+>Q9NT68 Teneurin-2 OS=Homo sapiens GN=TENM2 PE=1 SV=3
+Length=2774
+
+ Score = 32.3 bits (71),  Expect = 1.5, Method: Composition-based stats.
+ Identities = 18/127 (14%), Positives = 18/127 (14%), Gaps = 11/127 (9%)
+
+Query  3    CAATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCAT  62
+            C     C      C    T  AC              G      C C             
+Sbjct  743  CGTHGVCIGGACRCEEGWTGAACDQRVCHPRCIEH--GTCKDGKCECREGWNGEHCTIGR  800
+
+Query  63   GTTCAGCTGAATTCAGCTGAA---------CATGCCTTTTGATGGAGCAGTTTCCAAATA  113
+             T      G    C G              C TG             CA           
+Sbjct  801  QTAGTETDGCPDLCNGNGRCTLGQNSWQCVCQTGWRGPGCNVAMETSCADNKDNEGDGLV  860
+
+Query  114  CACTTTT  120
+                   
+Sbjct  861  DCLDPDC  867
+
+
+>Q9ZQ47 Glycine-rich domain-containing protein 1 OS=Arabidopsis thaliana 
+GN=GRDP1 PE=2 SV=1
+Length=819
+
+ Score = 32.3 bits (71),  Expect = 1.5, Method: Composition-based stats.
+ Identities = 21/94 (22%), Positives = 28/94 (30%), Gaps = 11/94 (12%)
+
+Query  28   AAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTT--CAGCTGAATTCAGCTGAACA  85
+            AA  +G  ++  G             AA A GC +G +  C     AA    G  GA C 
+Sbjct  719  AANASGCGSSCSGECGDM-----VKSAANASGCGSGCSGECGNMVKAANASGGGYGARCK  773
+
+Query  86   TGCCTTTTGATGGAGCAGTTTCCAAATACACTTT  119
+                +   G  GG         C         + 
+Sbjct  774  AAKASGCGGGCGGGC----GGGCGDMVKSVNASG  803
+
+
+>J3SEZ3 Venom phosphodiesterase 1 OS=Crotalus adamanteus PE=1 SV=2
+Length=851
+
+ Score = 32.3 bits (71),  Expect = 1.5, Method: Composition-based stats.
+ Identities = 13/102 (13%), Positives = 22/102 (22%), Gaps = 5/102 (5%)
+
+Query  47   CTCCATCAAAAGGCATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTT  106
+             +C   C       A+G +C         C       C     + +              
+Sbjct  32   VSCRYRCNETFSKMASGCSCDDKCTERQACCSDYEDTCVLPTQSWSCSKLRCGEKRIANV  91
+
+Query  107  CCAAATAC----ACTTTTGGTAGAATCTGCAGGTGGATATTG  144
+             C+ +  C     C T           +        + AT  
+Sbjct  92   LCSCSDDCLEKKDCCTDYKSICKG-ETSWLKDKCASSGATQC  132
+
+
+>A4QNR3 Transcription factor IIIB 50 kDa subunit OS=Xenopus tropicalis 
+GN=brf2 PE=2 SV=1
+Length=519
+
+ Score = 32.3 bits (71),  Expect = 1.6, Method: Composition-based stats.
+ Identities = 16/125 (13%), Positives = 21/125 (17%), Gaps = 2/125 (2%)
+
+Query  19   ATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCAT--GTTCAGCTGAATTC  76
+            A T             A  + G  A T         A      +           +  T 
+Sbjct  313  AVTEAELSRGTLADTEAQLSRGTLADTEAQLSRGTLADTEAQLSRGTLADTEAQLSRGTL  372
+
+Query  77   AGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAATACACTTTTGGTAGAATCTGCAGGT  136
+            A             T    + G              A      + GT          G  
+Sbjct  373  ADTEAQLSRGTLADTEAQLSRGTLADTEAQLSRGTLADTEAQLSRGTLADTVAQLSRGTL  432
+
+Query  137  GGATA  141
+                A
+Sbjct  433  ADTEA  437
+
+
+ Score = 31.6 bits (69),  Expect = 2.2, Method: Composition-based stats.
+ Identities = 15/128 (12%), Positives = 19/128 (15%), Gaps = 2/128 (2%)
+
+Query  1    ATCAATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGC  60
+            A     A           A       A      +  T     A       A   A     
+Sbjct  311  ALAVTEAELSRGTLADTEAQLSRGTLADTEAQLSRGTLADTEAQLSRGTLADTEAQLSR-  369
+
+Query  61   ATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAATACACTTTT  120
+                       +  T A             T    + G              A      +
+Sbjct  370  -GTLADTEAQLSRGTLADTEAQLSRGTLADTEAQLSRGTLADTEAQLSRGTLADTVAQLS  428
+
+Query  121  GGTAGAAT  128
+             GT     
+Sbjct  429  RGTLADTE  436
+
+
+>Q9R1K2 Teneurin-2 OS=Rattus norvegicus GN=Tenm2 PE=1 SV=2
+Length=2774
+
+ Score = 32.3 bits (71),  Expect = 1.7, Method: Composition-based stats.
+ Identities = 18/127 (14%), Positives = 18/127 (14%), Gaps = 11/127 (9%)
+
+Query  3    CAATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCAT  62
+            C     C      C    T  AC              G      C C             
+Sbjct  743  CGTHGVCIGGACRCEEGWTGAACDQRVCHPRCIEH--GTCKDGKCECREGWNGEHCTIGR  800
+
+Query  63   GTTCAGCTGAATTCAGCTGAA---------CATGCCTTTTGATGGAGCAGTTTCCAAATA  113
+             T      G    C G              C TG             CA           
+Sbjct  801  QTAGTETDGCPDLCNGNGRCTLGQNSWQCVCQTGWRGPGCNVAMETSCADNKDNEGDGLV  860
+
+Query  114  CACTTTT  120
+                   
+Sbjct  861  DCLDPDC  867
+
+
+>Q9W7R4 Teneurin-3 OS=Danio rerio GN=tenm3 PE=2 SV=1
+Length=2590
+
+ Score = 32.3 bits (71),  Expect = 1.8, Method: Composition-based stats.
+ Identities = 24/140 (17%), Positives = 29/140 (21%), Gaps = 9/140 (6%)
+
+Query  3    CAATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCAT  62
+            C   +  C               CA   G               C+    C      C  
+Sbjct  465  CDVPSNQCIDIHCSGHGICIMGTCACNTGYKGDNCEEVDCLDPSCSSHGVCIHGECHCNP  524
+
+Query  63   GTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAATACACTTTTG-  121
+            G     C    T C       C+      T   T    C  T       +   C    G 
+Sbjct  525  GWGGNNCEILKTMCPD----QCSGHGTYQTESGTC--TC-DTNWTGPDCSIEVCAVDCGS  577
+
+Query  122  -GTAGAATCTGCAGGTGGAT  140
+             G     +C    G TG   
+Sbjct  578  HGVCIGGSCRCEEGWTGSVC  597
+
+
+>Q9Z1K9 Disintegrin and metalloproteinase domain-containing protein 17 
+OS=Rattus norvegicus GN=Adam17 PE=1 SV=1
+Length=827
+
+ Score = 31.9 bits (70),  Expect = 2.0, Method: Composition-based stats.
+ Identities = 17/112 (15%), Positives = 23/112 (21%), Gaps = 6/112 (5%)
+
+Query  6    TATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTT  65
+              TCC           C+   +         T            C   +   G  ++   
+Sbjct  498  NDTCCNSDCTLKPGVQCSDRNSPCCKNCQFETAQKKCQEAINATCKGVSYCTG-NSSECP  556
+
+Query  66   CAGCTGAATTCAG---CTGAACATGCCTTTTGATGGAGCAGTTTCCAAATAC  114
+              G     T C     C    C   C       +    CA T   C      
+Sbjct  557  PPGDAEDDTVCLDLGKCKAGKCIPFCKREQELESCA--CADTDNSCKVCCRN  606
+
+
+>Q63772 Growth arrest-specific protein 6 OS=Rattus norvegicus GN=Gas6 
+PE=1 SV=1
+Length=674
+
+ Score = 31.9 bits (70),  Expect = 2.1, Method: Composition-based stats.
+ Identities = 17/123 (14%), Positives = 28/123 (23%), Gaps = 8/123 (7%)
+
+Query  3    CAATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCAT  62
+            C+     C+        +   AC +  +      +      CT    C          + 
+Sbjct  157  CSQKNGGCSQVCHNKPGSFQCACHSGFSLQSDNKSCQDIDECTDSDTCGDARCKNLPGSY  216
+
+Query  63   GTTCAGCTGAAT---TCAG---CTGAACATGCCTTTTGATGGAGCAGTTTCCAAATACAC  116
+               C      ++   TC     C    C   C  +    T    C G      +     C
+Sbjct  217  SCLCDKGYTYSSKEKTCQDVDECQQDRCEQTCVNSPGSYTCH--CNGRGGLKLSPDMDTC  274
+
+Query  117  TTT  119
+               
+Sbjct  275  EDI  277
+
+
+>P06719 Knob-associated histidine-rich protein OS=Plasmodium falciparum 
+(isolate NF7 / Ghana) GN=SD17 PE=3 SV=1
+Length=657
+
+ Score = 31.6 bits (69),  Expect = 2.7, Method: Composition-based stats.
+ Identities = 27/125 (22%), Positives = 34/125 (27%), Gaps = 0/125 (0%)
+
+Query  1    ATCAATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGC  60
+            AT  A        T   GA+T  A          AT      A T        + +    
+Sbjct  508  ATPGAKDKTQGGKTDKTGASTNAATNKGQCAAEGATKGATKEASTSKEATKEASTSKEAT  567
+
+Query  61   ATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAATACACTTTT  120
+               +T    T  A+T  G T  A  T   T     T G+    TT   A  +        
+Sbjct  568  KEASTSKEATKEASTSKGATKEASTTEGATKGASTTAGSTTGATTGANAVQSKDETADKN  627
+
+Query  121  GGTAG  125
+                G
+Sbjct  628  AANNG  632
+
+
+>O08721 Netrin receptor UNC5A OS=Rattus norvegicus GN=Unc5a PE=1 SV=1
+Length=898
+
+ Score = 31.6 bits (69),  Expect = 2.8, Method: Composition-based stats.
+ Identities = 25/135 (19%), Positives = 38/135 (28%), Gaps = 5/135 (4%)
+
+Query  4    AATATCCACCTGCAGATTCTACCAAAAGTG---TATTTGGAAACTGCTCCATCAAAAGGC  60
+            + +A       G     T  + C+A+ G G    + +    A   G   C         C
+Sbjct  232  STSAAVIVYVNGGWSTWTEWSVCSASCGRGWQKRSRSCTNPAPLNGGAFCEGQNVQKTAC  291
+
+Query  61   ATGTTCAGCTGAATTCAGCTGAAC--ATGCCTTTTGATGGAGCAGTTTCCAAATACACTT  118
+            AT     G   + +  + C        +  C+      GG  C G        T+  C  
+Sbjct  292  ATLCPVDGSWSSWSKWSACGLDCTHWRSRECSDPAPRNGGEECRGADLDTRNCTSDLCLH  351
+
+Query  119  TTGGTAGAATCTGCA  133
+            T       A   G  
+Sbjct  352  TASCPEDVALYIGLV  366
+
+
+>P41950 Dendrite extension defective protein 1 OS=Caenorhabditis elegans 
+GN=dex-1 PE=2 SV=2
+Length=1090
+
+ Score = 31.6 bits (69),  Expect = 2.9, Method: Composition-based stats.
+ Identities = 26/140 (19%), Positives = 31/140 (22%), Gaps = 21/140 (15%)
+
+Query  24   ACCAAAAGTGT-ATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATTCAGCTGA  82
+              C      G           C+  TC         GCAT      C      CA  T  
+Sbjct  314  DTCDQECSNGEWGPDCAYCCHCSEGTCHPISGDCQRGCATCWDGVACQTRQEKCA--TKT  371
+
+Query  83   ACATGCCTTTTGATGG-----------------AGCAGTTTCCAAATACACTTTTGGTAG  125
+             CA+   +       G                   C     C   +T C        T G
+Sbjct  372  QCASNALSFNDYDRCGEPIQRCQCLNGYKGDGYNNCEDVDECKTNSTICHKNAICTNTPG  431
+
+Query  126  AATCTGCAGGTGGATATTGA  145
+               C  C  G  G      +
+Sbjct  432  RYFCM-CKEGFSGDGQNDCS  450
+
+
+>Q7M4S9 Uncharacterized protein YBL113C OS=Saccharomyces cerevisiae (strain 
+ATCC 204508 / S288c) GN=YBL113C PE=4 SV=1
+Length=792
+
+ Score = 31.6 bits (69),  Expect = 2.9, Method: Composition-based stats.
+ Identities = 26/140 (19%), Positives = 45/140 (32%), Gaps = 6/140 (4%)
+
+Query  5    ATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGT  64
+             +AT  A       ATT  +  ++   T T +T    +A T  +  +         AT T
+Sbjct  274  TSATTTASINVRTSATTTESINSSTNATTTESTNSNTSATTTESTDSNTN------ATTT  327
+
+Query  65   TCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAATACACTTTTGGTA  124
+                   +ATT         AT   +T +  +     +  ++  A  TA   ++T   T 
+Sbjct  328  ASINVRTSATTTESTNSNTSATTTESTDSNTSATTTASTNSSTNATTTASTNSSTNATTT  387
+
+Query  125  GAATCTGCAGGTGGATATTG  144
+             +   +          A   
+Sbjct  388  ESTNASAKEDANKDGNAEDN  407
+
+
+>B7JY68 Chaperone protein DnaJ OS=Cyanothece sp. (strain PCC 8801) GN=dnaJ 
+PE=3 SV=1
+Length=375
+
+ Score = 30.8 bits (67),  Expect = 4.0, Method: Composition-based stats.
+ Identities = 23/80 (29%), Positives = 26/80 (33%), Gaps = 14/80 (18%)
+
+Query  21   TCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATTCAGCT  80
+            TC  C  + A  G           TG   C+TC  A        T  G     +TC  C 
+Sbjct  146  TCQVCNGSGAKPG-----------TGSRTCSTCNGAGQVRRATRTPFGSFAQVSTCPDCN  194
+
+Query  81   GAACATGCCTTTTGATGGAG  100
+            G   A         A GGAG
+Sbjct  195  G---AGQVIEQKCDACGGAG  211
+
+
+>A8MXZ3 Keratin-associated protein 9-1 OS=Homo sapiens GN=KRTAP9-1 PE=3 
+SV=1
+Length=250
+
+ Score = 30.4 bits (66),  Expect = 5.2, Method: Composition-based stats.
+ Identities = 22/136 (16%), Positives = 32/136 (24%), Gaps = 0/136 (0%)
+
+Query  5    ATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGT  64
+             T T C+    C  +    +CC           T     C   TC A+C   +       
+Sbjct  27   TTVTTCSSTPCCQPSCCVPSCCQPCCHPTCCQNTCCRTTCCQPTCVASCCQPSCCSTPCC  86
+
+Query  65   TCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAATACACTTTTGGTA  124
+                C  +      C  + C   C ++         C  T           C   T    
+Sbjct  87   QPTCCGSSCCGQTSCGSSCCQPICGSSCCQPCCHPTCYQTICFRTTCCQPTCCQPTCCRN  146
+
+Query  125  GAATCTGCAGGTGGAT  140
+             +   T C        
+Sbjct  147  TSCQPTCCGSSCCQPC  162
+
+
+>O70244 Cubilin OS=Rattus norvegicus GN=Cubn PE=1 SV=2
+Length=3623
+
+ Score = 30.8 bits (67),  Expect = 5.2, Method: Composition-based stats.
+ Identities = 25/135 (19%), Positives = 37/135 (27%), Gaps = 2/135 (1%)
+
+Query  1    ATCAATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGC  60
+            ATC+++    +    C      T     + G    +       C    C  T ++    C
+Sbjct  361  ATCSSSPVLGSFLPVCTCPPGYTGNGYGSNGCVRLSNICSRHPCVNGQCIETVSSYFCKC  420
+
+Query  61   ATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAATACACTTTT  120
+             +G +   CT     C+          C     G T     + T   C    A AC    
+Sbjct  421  DSGWSGQNCTENINDCS-SNPCLNGGTCIDGINGFTCDCTSSWTGYYCQTPQA-ACGGIL  478
+
+Query  121  GGTAGAATCTGCAGG  135
+             GT G          
+Sbjct  479  SGTQGTFAYHSPNDT  493
+
+
+>Q9P273 Teneurin-3 OS=Homo sapiens GN=TENM3 PE=2 SV=3
+Length=2699
+
+ Score = 30.4 bits (66),  Expect = 6.3, Method: Composition-based stats.
+ Identities = 29/141 (21%), Positives = 37/141 (26%), Gaps = 11/141 (8%)
+
+Query  3    CAATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGA-AACTGCTCCATCAAAAGGCA  61
+            C    T C     C G   C     A        +   A     GC+    C      C+
+Sbjct  575  CDVPTTQCIDPQ-CGGRGICIMGSCACNSGYKGESCEEADCIDPGCSNHGVCIHGECHCS  633
+
+Query  62   TGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAATACACTTTTG  121
+             G   + C    T C       C+     T    +G   C          +   C+   G
+Sbjct  634  PGWGGSNCEILKTMCPD----QCSGH--GTYLQESGSCTC-DPNWTGPDCSNEICSVDCG  686
+
+Query  122  --GTAGAATCTGCAGGTGGAT  140
+              G     TC    G TG A 
+Sbjct  687  SHGVCMGGTCRCEEGWTGPAC  707
+
+
+>Q20911 Probable cubilin OS=Caenorhabditis elegans GN=ZC116.3 PE=1 SV=4
+Length=4047
+
+ Score = 30.4 bits (66),  Expect = 6.5, Method: Composition-based stats.
+ Identities = 20/151 (13%), Positives = 32/151 (21%), Gaps = 11/151 (7%)
+
+Query  2    TCAATATCCACCTGCAGATTCTACCAAAAGT---GTATTTGGAAACTGCTCCATCAAAAG  58
+            TC A    C+   G          C    G       +   G+      + C+      G
+Sbjct  203  TCEADIDECSVYNGTTAGCQNNGTCINNRGGFECQCQSGYHGSLCQYHMSACSKTFELCG  262
+
+Query  59   GCATGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAATACACTT  118
+                    +       + +  T   C        +       C     C   +  C    
+Sbjct  263  PHGH-CIESIVDPTGQSSSDTTTYKCICDWGFKVSSDKNNPTCVDVNEC--ESNPCHPGV  319
+
+Query  119  TTGGTAGAATCTGC-----AGGTGGATATTG  144
+                  G+  C+GC       G         
+Sbjct  320  DCINLPGSFVCSGCPKGYKTDGNVCIDVNEC  350
+
+
+>Q9WTS6 Teneurin-3 OS=Mus musculus GN=Tenm3 PE=1 SV=1
+Length=2715
+
+ Score = 30.4 bits (66),  Expect = 7.2, Method: Composition-based stats.
+ Identities = 29/141 (21%), Positives = 36/141 (26%), Gaps = 11/141 (8%)
+
+Query  3    CAATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGA-AACTGCTCCATCAAAAGGCA  61
+            C    T C     C G   C     A            A     GC+    C      C 
+Sbjct  575  CDVPTTQCIDPQ-CGGRGICIMGSCACNSGYKGENCEEADCLDPGCSNHGVCIHGECHCN  633
+
+Query  62   TGTTCAGCTGAATTCAGCTGAACATGCCTTTTGATGGAGCAGTTTCCAAATACACTTTTG  121
+             G   + C    T CA      C+     T    +G   C          +   C+   G
+Sbjct  634  PGWGGSNCEILKTMCAD----QCSGH--GTYLQESGSCTC-DPNWTGPDCSNEICSVDCG  686
+
+Query  122  --GTAGAATCTGCAGGTGGAT  140
+              G     +C    G TG A 
+Sbjct  687  SHGVCMGGSCRCEEGWTGPAC  707
+
+
+>P78536 Disintegrin and metalloproteinase domain-containing protein 17 
+OS=Homo sapiens GN=ADAM17 PE=1 SV=1
+Length=824
+
+ Score = 30.0 bits (65),  Expect = 9.1, Method: Composition-based stats.
+ Identities = 14/119 (12%), Positives = 21/119 (18%), Gaps = 6/119 (5%)
+
+Query  22   CTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATTCAGCTG  81
+                C     +      G   +     CC  C                    + C G + 
+Sbjct  497  NNDTC---CNSDCTLKEGVQCSDRNSPCCKNCQFETAQKKCQEAINATCKGVSYCTGNSS  553
+
+Query  82   AACATGCCTTTTGATGGAGCAGTTT---CCAAATACACTTTTGGTAGAATCTGCAGGTG  137
+                 G     T       C        C       +C       +    C   +G   
+Sbjct  554  ECPPPGNAEDDTVCLDLGKCKDGKCIPFCEREQQLESCACNETDNSCKVCCRDLSGRCV  612
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.104    0.260    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0318    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5516274520
+
+Search has CONVERGED!
+
+
+  Database: uniprot-all.fasta
+    Posted date:  Mar 1, 2016  10:37 AM
+  Number of letters in database: 196,219,159
+  Number of sequences in database:  550,116
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -1,0 +1,138 @@
+
+
+
+n_protein = 525;
+
+
+%PSSM_file_name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fileFolder=fullfile('E:\MATLAB_WORK\DNA_binding_Protein\PDB1075\P_PSSM');
+dirOutput=dir(fullfile(fileFolder,'*.pssm'));
+PSSM_XXXX={dirOutput.name}';
+fileNames_PSSM = [];
+for i=1:525
+	path_way = [fileFolder '\' cell2mat(PSSM_XXXX(i))];
+	lujing=cellstr(path_way);
+	fileNames_PSSM = [fileNames_PSSM;lujing];
+end
+
+
+
+feature_PSSM_DWT_P=[];
+
+for i=1:n_protein
+	
+	files_name = cell2mat(fileNames_PSSM(i));
+
+	PSSM_Matrix = Read_Text_files_PSSM(files_name);
+	P = PSSM_Matrix;
+	P = P';
+	FF = GetDWT(P);
+    feature_PSSM_DWT_P(i,:)=FF(:);i
+	
+
+end
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+n_protein = 550;
+
+
+%PSSM_file_name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fileFolder=fullfile('E:\MATLAB_WORK\DNA_binding_Protein\PDB1075\N_PSSM');
+dirOutput=dir(fullfile(fileFolder,'*.pssm'));
+PSSM_XXXX={dirOutput.name}';
+fileNames_PSSM = [];
+for i=1:550
+	path_way = [fileFolder '\' cell2mat(PSSM_XXXX(i))];
+	lujing=cellstr(path_way);
+	fileNames_PSSM = [fileNames_PSSM;lujing];
+end
+
+
+
+feature_PSSM_DWT_N=[];
+
+for i=1:n_protein
+	
+	files_name = cell2mat(fileNames_PSSM(i));
+
+	PSSM_Matrix = Read_Text_files_PSSM(files_name);
+
+	P = PSSM_Matrix;
+	P = P';
+	FF = GetDWT(P);
+    feature_PSSM_DWT_N(i,:)=FF(:);i
+	
+
+end
+
+
+
+n_protein = 2104;
+
+
+%PSSM_file_name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fileFolder=fullfile('D:\tju_workspace\C30E\MATLAB_WORK\DNA_binding_Protein\hu_dataset\train_pssm');
+
+fileNames_PSSM = [];
+for i=1:2104
+	str = [num2str(i-1) '.pssm'];
+	path_way = [fileFolder '\' str];
+	lujing=cellstr(path_way);
+	fileNames_PSSM = [fileNames_PSSM;lujing];
+end
+
+
+PSSM_DWT_2104=[];
+
+for i=1:n_protein
+	
+	files_name = cell2mat(fileNames_PSSM(i));
+	Seq_Length = length(cell2mat(train_Seq_2104(i)));
+	PSSM_Matrix = Read_Text_files_PSSM(files_name,Seq_Length);
+	P = PSSM_Matrix;
+	
+	P = P';
+	FF = GetDWT(P);
+    PSSM_DWT_2104(i,:)=FF(:);i
+	
+
+end
+
+
+
+n_protein = 296;
+
+
+%PSSM_file_name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+fileFolder=fullfile('D:\tju_workspace\C30E\MATLAB_WORK\DNA_binding_Protein\hu_dataset\test_pssm');
+
+fileNames_PSSM = [];
+for i=1:n_protein
+	str = [num2str(i-1) '.pssm'];
+	path_way = [fileFolder '\' str];
+	lujing=cellstr(path_way);
+	fileNames_PSSM = [fileNames_PSSM;lujing];
+end
+
+
+PSSM_DWT_296=[];
+
+for i=1:n_protein
+	
+	files_name = cell2mat(fileNames_PSSM(i));
+	Seq_Length = length(cell2mat(test_Seq_296(i)));
+	PSSM_Matrix = Read_Text_files_PSSM(files_name,Seq_Length);
+	P = PSSM_Matrix;
+	
+	P = P';
+	FF = GetDWT(P);
+    PSSM_DWT_296(i,:)=FF(:);i
+	
+
+end

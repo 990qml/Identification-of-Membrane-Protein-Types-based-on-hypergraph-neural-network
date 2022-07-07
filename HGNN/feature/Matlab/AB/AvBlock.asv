@@ -1,0 +1,23 @@
+function [ AC ] = AvBlock( P , n_divide)
+%P is the given matrix representation 
+%it does not work with protein with less than 20 amino-acids
+
+n=size(P,1);%ÐÐÊý
+B=floor(n/n_divide);%61/10=6
+AC=[];
+for i=1:n_divide%1-6
+    RID=P( (B*(i-1))+1:B*i,: );%1-6 7-12 13-18 19-24 25-30 31-36 37-42 43-48 49-54 55-60 61 
+    if min(size(RID))==1
+        AC=[AC (RID)];
+    elseif  min(size(RID))==0
+        AC=[AC P(ceil(B*i),:)];
+    else
+        AC=[AC mean(RID)];
+    end
+end
+AC(find(isnan(AC)))=0;
+AC(find(isinf(AC)))=0;
+
+
+end
+
